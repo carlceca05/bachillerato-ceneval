@@ -1409,7 +1409,7 @@ position: relative;
 	right: -200px;
 	z-index: 9999999;
 	width: auto;
-	-webkit-transition-: .5s all;
+	-webkit-transition: .5s all;
 }
 
 #tbcontainer:hover {
@@ -2540,17 +2540,17 @@ footer:before {
 
 
     footer:before {
-      width: 100%;
-      height: 100px;
-      background:  url() center no-repeat;
-      display: none;
-      bottom: 0;
-      right: 0;
-      content: "";
-      z-index: 99999999999;
-      position: fixed;
-      background-size: contain;
-    }
+  width: 100%;
+  height: 100px;
+  background:  url() center no-repeat;
+  display: none;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: 99999999999;
+  position: fixed;
+  background-size: contain;
+}
 
 
 
@@ -2614,19 +2614,22 @@ footer:before {
 
 
 
-  body:after {
+body:after {
 
-    height: 100px;
+height: 100px;
 
-    width: 100%;
+width: 100%;
 
-    background-size: 60%;
+background-size: 60%;
 
-  }
+}
 
-  .dropdown-menu {
-    min-width: 120px;
-  }
+.dropdown-menu {
+min-width: 120px;
+}
+
+
+
 }
 
 
@@ -2694,7 +2697,7 @@ margin-top: 3px;
 
 
 
-@media (max-width: 320px) { #avisodep {padding-bottom: 1749.25%; display:block; }
+@media (max-width: 320px) { #avisodep {padding-bottom: 1749.25%;} /*display:block;*/ }
 
 
 
@@ -2777,21 +2780,21 @@ margin-top: 3px;
 	float:left;
 
 }
-/*@media only screen and (max-width: 1500px)and (max-width: 500px)  {
+@media only screen and (max-width: 1500px)and (max-width: 500px)  {
     .banners {  
- 	font-size: 50px;
- 	padding-top: 10px;
- 	margin-top: 50px;
+ 	/*font-size: 50px;*/
+ 	/*padding-top: 10px;*/
+ 	/*margin-top: 50px;*/
     	width:100% !important;
         display: none;
     }
-}*/
+}
 
 @media only screen and (max-width:2000px) {
     .banners2 {
        
- 	font-size: 50px;
- 	padding-top: 10px;
+ 	/*font-size: 50px;*/
+ 	/*padding-top: 10px;*/
  	/*padding-right: 50px;*/
     	/*margin-top: 50px;*/
         width:100% !important;
@@ -2802,8 +2805,8 @@ margin-top: 3px;
     .banners2 {
        
  	font-size: 50px;
- 	/*padding-top: 10px;*/
- 	/*margin-top: 50px;*/
+ 	/*padding-top: 10px;
+ 	margin-top: 50px;*/
     	width:100% !important;
         display: block;
     }
@@ -2870,4 +2873,9 @@ border-style: solid!important;
   .equalrow {
 	display:table;
   }
+  
+  
+  
+    
+  
 }
