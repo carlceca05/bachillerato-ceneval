@@ -152,7 +152,7 @@
 
   /* carrusel */
   .img1{
-    background-image:  url("img/bg_bachillerato.webp"); 
+    background-image:  url("img/bg_bachillerato.jpg"); 
 	  background-size: cover;
 	  background-repeat: no-repeat;
     background-position: center;
@@ -170,10 +170,15 @@
     background-position: center;
   }
   .aire{
-    padding: 60px;
+    padding: 60px 0px;
   }
   @media only screen and (min-width:901px) and (max-width:2000px){
-    
+    .aparece{
+      display: none;
+    }
+    .espacio{
+      padding: 0px 80px;
+    }
     
 
   } 
@@ -184,6 +189,12 @@
 	    background-size: cover;
 	    background-repeat: no-repeat;
       background-position: center;
+    }
+    .desaparecido{
+      display: none;
+    }
+    .espacio{
+      padding: 0px 0px;
     }
     
   } 
@@ -409,22 +420,28 @@
         <div class="item row img1 active">
           <div class="span5 ">
           </div>
+          <div class="container">
           <div class="block">
               <div class="aire">
-                <h1>Obtén tu certificado de bachillerato CENEVAL en un solo examen <abbr title="Centro Nacional de Evaluación Para la Educación Superior"></abbr></h1>
-                <p class="lead">Bachillerato 100% con validez oficial garantizado, cursa presencial o en línea. </p>
-                <p><a class="btn btn-primary btn-large" href="" target=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Regístrate »</a></p>
+                <h1>Obtén tu certificado de bachillerato CENEVAL en un solo examen <abbr title="Centro Nacional de Evaluación Para la Educación Superior"></abbr><br> </h1>
+                <p class="lead">Bachillerato 100% con validez oficial garantizado, cursa presencial o en línea. <br><br> </p>
+                <p><a class="btn btn-primary btn-large" href="#pagar"  ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Regístrate »</a></p>
               </div>
             </div>
           </div>
+
+        </div>
           <div class="item row img2 desaparece">
+            <div class="container">
             <div class="block">
               <div class="aire">
-                <h1><br><br></h1>
-                <p class="lead"><br><br></p>
-                <p><a class="btn btn-primary btn-large" href="" target=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp; Solicita una cotización »</a></p>
+                <h1>Prepa para Empresas<br></h1>
+                <p class="lead">Apoya las personas para conseguir su prepa.<br><br></p>
+                <p><a class="btn btn-primary btn-large" href="#myModal" role="button" data-toggle="modal" target=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp; Solicita una cotización »</a></p>
               </div>
             </div>
+
+          </div>
           </div>
       </div>
     </div>
@@ -706,7 +723,13 @@
       <!--SECCION 2.0 CURSO EN AULA VIRTUAL-->
       <h3>Curso Aula virtual</h3>
       <p><img class="pull-right" style="width:350px;" src="img/bachillerato_ceneval_img1.webp" alt="preparatoria en un examen CENEVAL"></p>
-	    <p> Conocerás toda la información que tenemos para ti dentro de nuestra Aula virtual donde tendrás acceso a todos nuestros materiales abarcando todos los temas el examen,<br><br><strong style="color:#41bb19;"> Plataforma profesional con cientos de recursos dirigidos a que puedas conseguir tus metas </strong> dentro de nuestra plataforma tendrás todo lo necesario y más, obtén tu acceso ahora y comienza a preparte para tu examen</p>
+	    <p>Capacítate en todos los temas de la guía para el <strong > examen único de  bachillerato CENEVAL </strong> , estudia con profesores de cada área de conocimientos mediante transmisiones en vivo, contesta tus dudas y conoce los tips para aprobar más fácilmente.<br><br></p>
+      <ul class="unstyled">
+        <li><i class="icon-ok"></i> <strong style="color:#41bb19;">Transmisiones en vivo </strong> con profesores de cada área de conocimientos.
+          </li>
+        <li><i class="icon-ok"></i> <strong style="color:#41bb19;">Exámenes parciales </strong> con reactivos similares a los del examen real.</li>
+        <li><i class="icon-ok"></i> <strong style="color:#41bb19;"> Exámenes simulacro con 192 reactivos </strong> cronometrado y revisión para que te familiarices con la prueba real y conozcas tu dominio de los conocimientos adquiridos en cada clase.</li>
+      </ul>
       <hr>
       <!--SECCION 3 CURSO EN LINEA-->
       <h3 id="presencial">Curso en línea</h3>
@@ -876,9 +899,9 @@
       <thead>
         <tr>
           <th>Forma de pago</th>
-            <th>Curso presencial $6000</th>
-            <th>Curso en línea $2500</th>
-            <th>Curso en Aula Virtual $4500</th>	
+          <th>Curso presencial $6000</th>
+          <th>Curso en línea $2500</th>
+          <th class="desaparecido">Curso en Aula Virtual $4500</th>	
         </tr>
       </thead>
       <tbody>
@@ -891,11 +914,21 @@
             <!--boton comprar-->
             <a onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary" href="" role="button" data-toggle="modal"><i class="icon-file-text-alt icon-large"></i> COMPRAR</a>
           </td>
-          <td style="vertical-align:baseline; height:50px;">
+          <td class="desaparecido" style="vertical-align:baseline; height:50px;">
             <!--boton comprar-->
             <a onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary" href="" role="button" data-toggle="modal"><i class="icon-file-text-alt icon-large"></i> COMPRAR</a>
           </td>
         </tr>
+        <thead class="aparece">
+          <tr>
+            <th></th>
+            <th colspan="2">Curso en Aula Virtual $4500</th>
+          </tr>
+        </thead>
+        <td class="aparece" style="vertical-align:baseline; height:50px;" ></td>
+        <td class="aparece" colspan="2" style="vertical-align:baseline; height:50px;">
+          <a onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary" href="" role="button" data-toggle="modal"><i class="icon-file-text-alt icon-large"></i> COMPRAR</a>
+        </td>
         <!--deposito bancario-->
         <tr>
           <td>Depósito Bancario</td>
@@ -1088,7 +1121,7 @@
     <img src="img/convocatoria_unam.png" alt="convocatoria unam">
     <img src="img/convocatoria_ipn.png" alt="convocatoria ipn">
     -->
-    <!-- OCULTARE LOS BANNER PARA PONER PAGINAS AMIGAS  
+     <!-- OCULTARE LOS BANNER PARA PONER PAGINAS AMIGAS  
     <div class="banners" >
       <p><a href="http://www.cecaes.edu.mx/examenes/examenes-simulacro-y-reactivos-unam.html"><img src="img/bannerunam.jpg" ></a></p>
     </div>
@@ -1116,18 +1149,28 @@
         <hr>--> 
    
     <br> 
-      <div class="banners" style="">
+      <div class="banners" >
         <p><a href="http://los7secretos.com/"><img src="img/bannerscecaes.webp"></a></p>
       </div>
-      <div class="banners" style="">
-        <p><a href=""><img src="img/banner.webp"></a></p>
+      <div  class="banners2" >
+        <h3></h3>
+        <p><a href="http://los7secretos.com/"><img src="img/bannerscecaes2.jpg" ></a></p>
       </div>
+
+      <div class="banners" >
+        <p><a href="#myModal" role="button" data-toggle="modal"><img src="img/banner.webp"></a></p>
+      </div>
+      <div  class="banners2" >
+        <h3></h3>
+        <p><a href="#myModal" role="button" data-toggle="modal"><img src="img/prepaempresas_banner_movil.jpg" ></a></p>
+      </div>
+      
   
   <!--AQUI COMIENZA EL FORMULARIO POPUP-->       
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header hidden-phone">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h4 id="myModalLabel">Para realizar tu registro llena el siguiente formulario.</h4>
+      <h4 id="myModalLabel">Para dudas, aclaraciones y cotizaciones llena el siguiente formulario.</h4>
     </div>
     <!--formulario DUDAS-->
           <!-- Begin Sendinblue Form -->
@@ -1138,7 +1181,7 @@
                           <input type="text" value="" name="GCLID" class="" id="mce-GCLID">
                           <input type="hidden" name="ADTRACKING" value="pop-up">
           </div>
-<div class="sib-form" style="text-align: center; padding: 0px; margin-top:15px;">
+<div class="sib-form espacio" style="text-align: center ;  margin-top:15px;">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; border-radius:3px; border-color:#ff4949;max-width:540px;">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
