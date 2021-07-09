@@ -7,15 +7,17 @@
     <title>privacidad</title>
 
     <!--LINKS-->
-  <link rel="icon" type="image/png" href="imagenes/logo_bachillerato_ceneval.webp">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/sss.css">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-  
+  <!--LINKS-->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/style.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/sss.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/estilos.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" rel="stylesheet" href="css/modal.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
 
 
 
@@ -23,7 +25,7 @@
 <body>
 
     <!--MENU DE NAVEGACON-->
-  <!--
+  
   <nav class="navbar">
     <div class="navbar-inner">
       <div class="container">
@@ -33,26 +35,23 @@
             <li>
               <a href="index.html"><i class="icon-home"></i> inicio</a>
             </li>
-            
             <li class="dropdown active">
               <a class="dropdown-toggle " data-toggle="dropdown" href="#"><i class="icon-book"></i> cursos <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem"><span class="nav-header">Exámenes <abbr title="Centro Nacional de Evaluación Para La Educación Superior">CENEVAL</abbr></span>
                   <ul class="unstyled">
                     <li role="menuitem">
-                      <a href="preparatoria-en-un-examen-ceneval.html">Bachillerato</a>
+                      <a href="#pagar"> Curso presencial &nbsp; &nbsp; &nbsp;$6000</a>
                     </li>
                     <li role="menuitem">
-                      <a href="licenciatura-en-educacion-preescolar-ceneval.html">Preescolar</a>
+                      <a href="#pagar"> Curso en linea &nbsp; &nbsp; &nbsp; &nbsp; $2500</a>
                     </li>
                     <li role="menuitem">
-                      <a href="licenciatura-en-educacion-primaria-ceneval.html">Primaria</a>
-                    </li>
-                    <li role="menuitem">
-                      <a href="segunda-etapa-ceneval.html">Segunda Etapa</a>
+                      <a href="#pagar">Curso aula virtual &nbsp; &nbsp;$4500</a>
                     </li>
                   </ul>
                 </li>
+                <!--aqui se oculta el submenu
                 <li class="divider"></li>
                 <li role="menuitem">
                   <span class="nav-header">Exámenes de admisión</span>
@@ -74,15 +73,14 @@
                 <li role="menuitem"><a href="evaluacion-docente.html">Evaluación Docente <abbr title="Instituto Nacional para la Evaluación de la Educación">INEE</abbr></a></li>                
                 <li class="divider"></li>
                 <li role="menuitem"><span class="nav-header">Próximamente</span>
-                
-                   
                   <ul class="unstyled prox">
                     <li role="menuitem"><a href="#">bachillerato <abbr title="Colegio de Bachilleres">colbach</abbr></a></li>
                   </ul>
-                
-                </li>
+                </li> 
+                aqui se oculta el submenu-->
               </ul>
             </li>
+            <!--aqui se oculta menu
             <li class="dropdown active"><a class="dropdown-toggle " data-toggle="dropdown" href="#"><i class="fas fa-file-alt"></i> exámenes<sup class="nuevo parpadea"> Nuevo</sup> <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem"><span class="nav-header">Exámenes y Reactivos <abbr title="Centro Nacional de Evaluación Para La Educación Superior"></abbr></span>
@@ -100,10 +98,7 @@
                 <li role="menuitem"><a href="bachillerato-colbach.html">Bachillerato <abbr title="Colegio de Bachilleres">Colbach</a></li>
                 <li role="menuitem"><a href="evaluacion-docente.html">Evaluación Docente <abbr title="Instituto Nacional para la Evaluación de la Educación">INEE</abbr></a></li>                
                 <li class="divider"></li>
-                
                 <li role="menuitem"><span class="nav-header">Próximamente</span>
-                  
-                  
                   <ul class="unstyled prox">
                     <li role="menuitem"><a href="#">bachillerato <abbr title="Colegio de Bachilleres">colbach</abbr></a></li>
                   </ul>
@@ -117,24 +112,26 @@
                   <ul class="unstyled">
                     <li role="menuitem"><a tabindex="-1" href="../planteles.html#eugenia">Eugenia <img class="pull-right" src="../img/metro-eugenia.png" height="16" width="16"></a></li>
                      <li role="menuitem"><a tabindex="-1" href="../planteles.html#viaducto">Viaducto <img class="pull-right" src="../img/metro-viaducto.png" height="16" width="16"></a></li> 
-                    
                     </li>
                   </ul>
-                </li>
-               
-              
+                </li>      
               </ul>
             </li>
-          
-            
-            <li><a href="../conocenos.html"><i class="icon-group"></i> Conócenos</a>
-              <li><a href="https://www.cecaes.edu.mx/blog/" target="new"><i class="icon-file"></i> Blog</a>
-              </li>
-               <li><a href="../blog"><i class="icon-folder-open"></i> blog</a>
-              </li> 
-
+            -->
+            <!--cierre temporal
+            <li>
+              <a href="conocenos.html"><i class="icon-group"></i> Conócenos</a>
             </li>
-            <li><a href="../preguntas-frecuentes.html" title="Preguntas frecuentes"><i class="icon-question"></i> FAQs</a></li>
+            -->
+            <li>
+              <a href="https://bachilleratoceneval.com/blog" target="new"><i class="icon-file"></i> Blog</a>
+            </li>
+            <!--
+            <li>
+              <a href="preguntas-frecuentes.html" title="Preguntas frecuentes"><i class="icon-question"></i> FAQs</a>
+            </li>
+            -->
+            <!--
              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> acceso alumnos <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" id="access">
                 <form id="contactForm" method="post" action="http://www.cecaes.edu.mx/curso/login/index.php">
@@ -146,30 +143,27 @@
                 </form>
               </ul>
             </li> 
-          
+            -->
           </ul>
-          
             <ul class="nav pull-right">
-            <li><a title="facebook.com/cecaesmx" href="https://www.facebook.com/cecaesmx" target="new"><i class="icon-facebook"></i> <span class="hidden-desktop">facebook</span></a>
+            <li><a title="facebook.com/cecaesmx" href="https://www.facebook.com/bachilleratoceneval" target="new"><i class="icon-facebook"></i> <span class="hidden-desktop">facebook</span></a>
             </li>
+            <!--aqui se iculta redes
             <li><a title="twitter.com/cecaesmx" href="https://www.twitter.com/cecaesmx" target="new"><i class="icon-twitter"></i> <span class="hidden-desktop">twitter</span></a> 
             </li>
             <li><a title="plus.google.com/118034399806132038346" href="https://plus.google.com/118034399806132038346" target="new"><i class="icon-google-plus"></i> <span class="hidden-desktop">google plus</span></a>
             </li> 
              <li class="hidden-sm-desktop"><a title="pinterest.com/cecaesmx" href="https://www.pinterest.com/cecaesmx" target="new"><i class="icon-pinterest"></i> <span class="hidden-desktop">pinerest</span></a> 
             </li> 
-            
             </li>
             <li class="hidden-sm-desktop"><a title="youtube.com/cecaesmx" href="https://www.youtube.com/cecaesmx" target="new"><i class="icon-youtube"></i> <span class="hidden-desktop">youTube</span></a> 
             </li>
+            -->
           </ul>
-        
-          
         </div>
       </div>
     </div>
   </nav>
-  -->
   <!--FIN DE MENU DE NAVEGACION-->
   <header class="container">
 
@@ -195,16 +189,16 @@
             <h1>Obtén tu certificado de bachillerato CENEVAL en un solo examen <abbr title="Centro Nacional de Evaluación Para la Educación Superior"></abbr></h1>
             <p class="lead">Bachillerato 100% con validez oficial garantizado, cursa presencial o en línea. </p>
           </div>
-          <a class="btn btn-primary" href="#myModal" role="button" data-toggle="modal"><i class="icon-file-text-alt icon-large"></i>&nbsp;&nbsp; ¡Inscríbete hoy!</a>
+          
           <br class="visible-phone">
           <br class="visible-phone">
-          <a class="btn" href="#fechas-curso"><i class="icon-calendar icon-large"></i>&nbsp;&nbsp;Fechas y horarios</a>
+          
           
         </div>
       </div>
   </section>
     <div class="container">
-        <div>
+        <div style="margin-top: 55px;">
             <h1>AVISO DE PRIVACIDAD</h1>
             <p>Aviso de Privacidad:
                 Última modificación: 02 de Julio de 2021</p>
@@ -257,7 +251,7 @@
             <p>Usted puede dejar de recibir correo electrónicos con mensajes promocionales y mensajes por teléfono fijo o celular siguiendo los siguientes pasos:</p>
                 
             <ol>
-                <li>Envíanos una solicitud con tu nombre, correo y numero telefonico a avisodeprivacidad@cecaes.com indicándonos por qué ya no deseas recibir información.</li>
+                <li>Envíanos una solicitud con tu nombre, correo y numero telefonico a info@bachilleratoceneval.com indicándonos por qué ya no deseas recibir información.</li>
                 <li>Tu solicitud será procesada dentro de los 3 días hábiles posteriores.</li>
                 <li>Se te enviará un correo de verificación indicando que no se te volverán a enviar estos mensajes ni recibirás llamadas de nuestra parte.</li>
             </ol>
@@ -268,61 +262,383 @@
                     
             <p>Los mecanismos que se han implementado para el ejercicio de dichos derechos son a través de la presentación de la solicitud respectiva en:</p>
                 
+            <ul>
+              <li>Envíanos una solicitud con tu nombre, correo y numero telefonico a info@bachilleratoceneval.com indicándonos por qué acción deseas realizar.</li>
+              <li>Tu solicitud será procesada dentro de los 3 días hábiles posteriores.</li>
+              <li>Se te enviará un correo de verificación con todos los datos necesarios para que puedas llevar a cabo dicha acción.</li>
+            </ul>    
+              <p>Para mayor información, favor de comunicarse al departamento de privacidad [info@bachilleratoceneval.com] o visitar nuestra página de Internet [http://www.bachilleratoceneval.com/privacidad.html].</p>
+              
                 
-                Envíanos una solicitud con tu nombre, correo y numero telefonico a avisodeprivacidad@cecaes.com indicándonos por qué acción deseas realizar.
-                Tu solicitud será procesada dentro de los 3 días hábiles posteriores.
-                Se te enviará un correo de verificación con todos los datos necesarios para que puedas llevar a cabo dicha acción.
+            <h5>¿Cómo puedes revocar tu consentimiento para el tratamiento de tus datos?</h5>
                 
-                Para mayor información, favor de comunicarse al departamento de privacidad [avisodeprivacidad@cecaes.com] o visitar nuestra página de Internet [http://www.cecaes.com/aviso-de-privacidad.html].
+            <p>En todo momento, podrás revocar el consentimiento que nos has otorgado para el tratamiento de tus datos personales, a fin de que dejemos de hacer uso de los mismos. Para ello, es necesario realices los siguientes pasos.</p>
                 
-                
-                ¿Cómo puedes revocar tu consentimiento para el tratamiento de tus datos?
-                
-                
-                En todo momento, podrás revocar el consentimiento que nos has otorgado para el tratamiento de tus datos personales, a fin de que dejemos de hacer uso de los mismos. Para ello, es necesario realices los siguientes pasos.
-                
-                
-                Envíanos una solicitud con tu nombre, correo y numero telefonico a avisodeprivacidad@cecaes.com indicándonos por qué deseas revocar tu consentimiento.
-                Tu solicitud será procesada dentro de los 3 días hábiles posteriores.
-                Se te enviará un correo de verificación con todos tus datos y serán borrados de nuestras bases de datos.
-                
-                Modificaciones al aviso de privacidad
-                
-                
-                Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos.
+            <ol>
+              <li>Envíanos una solicitud con tu nombre, correo y numero telefonico a info@bachilleratoceneval.com indicándonos por qué deseas revocar tu consentimiento.</li>
+              <li>Tu solicitud será procesada dentro de los 3 días hábiles posteriores.</li>
+              <li>Se te enviará un correo de verificación con todos tus datos y serán borrados de nuestras bases de datos.</li>
+              </ol>
+                <h5>Modificaciones al aviso de privacidad</h5>
                 
                 
-                Estas modificaciones estarán disponibles al público a través de los siguientes medios: (i) anuncios visibles en nuestros centros de capacitación u oficinas; (ii) trípticos o folletos disponibles en nuestros centros de capacitación u oficinas; (iii) en nuestra página de Internet [http://www.cecaes.com/aviso-de-privacidad.html]; (iv) o te las haremos llegar al último correo electrónico que nos hayas proporcionado.
+              <p>Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos.</p>
                 
                 
-                Uso de cookies y web beacons
+              <p>Estas modificaciones estarán disponibles al público a través de los siguientes medios: (i) anuncios visibles en nuestros centros de capacitación u oficinas; (ii) trípticos o folletos disponibles en nuestros centros de capacitación u oficinas; (iii) en nuestra página de Internet [http://www.bachilleratoceneval.com/privacidad.html]; (iv) o te las haremos llegar al último correo electrónico que nos hayas proporcionado.</p>
                 
                 
-                Las cookies son archivos de texto que son descargados automáticamente y almacenados en el disco duro del equipo de cómputo del usuario al navegar en una página de Internet específica, que permiten recordar al servidor de Internet algunos datos sobre este usuario, entre ellos, sus preferencias para la visualización de las páginas en ese servidor, nombre de usuario y contraseña.
+               <h5> Uso de cookies y web beacons</h5>
                 
                 
-                Por su parte, las web beacons son imágenes insertadas en una página de Internet o correo electrónico, que puede ser utilizado para monitorear el comportamiento de un visitante, como almacenar información sobre la dirección IP del usuario, duración del tiempo de interacción en dicha página y el tipo de navegador utilizado, entre otros
+                <p>Las cookies son archivos de texto que son descargados automáticamente y almacenados en el disco duro del equipo de cómputo del usuario al navegar en una página de Internet específica, que permiten recordar al servidor de Internet algunos datos sobre este usuario, entre ellos, sus preferencias para la visualización de las páginas en ese servidor, nombre de usuario y contraseña.</p>
                 
                 
-                Le informamos que utilizamos cookies y web beacons para obtener información personal de usted, como la siguiente:
+               <p> Por su parte, las web beacons son imágenes insertadas en una página de Internet o correo electrónico, que puede ser utilizado para monitorear el comportamiento de un visitante, como almacenar información sobre la dirección IP del usuario, duración del tiempo de interacción en dicha página y el tipo de navegador utilizado, entre otros</p>
                 
                 
-                Su tipo de navegador y sistema operativo.
-                Las páginas de Internet que visita.
-                Los vínculos que sigue.
-                La dirección IP.
-                El sitio que visitó antes de entrar al nuestro.
+            <p>Le informamos que utilizamos cookies y web beacons para obtener información personal de usted, como la siguiente:</p>
                 
-                Estas cookies y otras tecnologías pueden ser deshabilitadas. Para conocer cómo hacerlo, envianos un correo a soporte@cecaes.com e inmediato te ayudaremos.
+                <ul>
+               <li> Su tipo de navegador y sistema operativo.</li>
+               <li> Las páginas de Internet que visita.</li>
+               <li> Los vínculos que sigue.</li>
+                <li>La dirección IP.</li>
+               <li> El sitio que visitó antes de entrar al nuestro.</li>
+              </ul>
+                <p>Estas cookies y otras tecnologías pueden ser deshabilitadas. Para conocer cómo hacerlo, envianos un correo a info@bachilleratoceneval.com e inmediato te ayudaremos.</p>
                 
                 
-                ¿Ante quién puedes presentar tus quejas y denuncias por el tratamiento indebido de tus datos personales?
+                <h5>¿Ante quién puedes presentar tus quejas y denuncias por el tratamiento indebido de tus datos personales?</h5>
                 
                 
-                Si consideras que tu derecho de protección de datos personales ha sido lesionado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, presume que en el tratamiento de tus datos personales existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, podrá interponer la queja o denuncia correspondiente ante el IFAI, para mayor información visite  www.ifai.org.mx.
+                <p>Si consideras que tu derecho de protección de datos personales ha sido lesionado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, presume que en el tratamiento de tus datos personales existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, podrá interponer la queja o denuncia correspondiente ante el IFAI, para mayor información visite  www.ifai.org.mx.
                 
                 </p>
         </div>
     </div>
+
+    <!-- SECCION FOOTER  -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <h4><i class="icon-bullhorn"></i> Boletín informativo</h4>
+          <p class="upper"> No te pierdas ningún evento importante, además recibe descuentos y promociones exclusivas.
+          </p>
+          <!--formulario boletin iframe-->
+          <iframe width="100%" height="156" src="https://bachilleratoceneval.com/formularios/formulario_boletin.html" frameborder="0" scrolling="no" ></iframe>
+          
+        </div>
+        <div class="span5">
+          <h4 class="control-group.info"><i class="icon-thumbs-up"></i> testimonios</h4>
+          <p class="upper"><i class="icon-quote-left icon-3x pull-left"></i> les confieso que estaba nerviosa a la hora de presentar mi examen de bachillerato,
+            <img  data-src="img/testimonio-alumna.webp" class="img-polaroid pull-right lazyload" alt="testiomonio de alumna" widht="60" height="60">
+            <span class="hidden-sm-desktop">en la guía venían demasiados temas y no sabía ni por donde empezar, además tenía un año de inactividad escolar. 
+            </span>
+            Me platicaron que en <abbr title="Preparatoria en un examen CENEVAL">bachilleratoceneval.com</abbr> eran muy buenos y seguí ese consejo, afortunadamente me capacitaron de tal manera que logré aprobar mi examen y ahora estoy estudiando la Licenciatura en Psicología en la UNAM.<i class="icon-quote-right"></i>
+          </p>
+          <p class="text-right"><small>Mariana Espinoza Aguilar</small></p>
+        </div>
+        <div id="sitemap" class="span3">
+          <h4><i class="icon-sitemap"></i> mapa del sitio</h4>
+          <ul class="unstyled">
+            <div class="row-fluid">
+              <div class="span6">
+                <li><a href="index.html">Inicio</a></li>
+                <!-- CIERRE TEMPORAL   
+              <li>cursos
+                <ul role="menu">
+                  <li role="menuitem"><a href="preparatoria-en-un-examen-ceneval.html">Bachillerato</a></li>
+                  <li role="menuitem"><a href="licenciatura-en-educacion-preescolar-ceneval.html">Preescolar</a></li>
+                  <li role="menuitem"><a href="licenciatura-en-educacion-primaria-ceneval.html">Primaria</a></li>
+                  <li role="menuitem"><a href="segunda-etapa-ceneval.html">Segunda Etapa</a></li>
+                  <li role="menuitem"><a href="examen-de-ingreso-a-la-unam.html"><abbr title="Universidad Nacional Autonoma de México">UNAM</abbr></a></li>
+                  <li role="menuitem"><a href="examen-de-ingreso-al-ipn.html"><abbr title="Instituto Politecnico Nacional">IPN</abbr></a></li>
+                </ul>
+              </li>
+              CIERRE TEMPORAL -->
+              </div>
+              <!-- CIERRE TEMPORAL
+            <div class="span6">
+              <li>
+                <ul role="menu">
+                  <li role="menuitem"><a href="examen-de-ingreso-a-preparatoria-comipems.html"><abbr title="Comisión Metropolitana de Instituciones Públicas de Educación Media Superior">COMIPEMS</abbr></a></li>
+                </ul>
+              </li>
+              <li>planteles
+                <ul role="menu">
+                  <li role="menuitem"><a tabindex="-1" href="../planteles.html#df">CDMX</a></li>
+                </ul>
+              </li>
+              <li><a href="../conocenos.html">conócenos</a></li>
+              <li role="menuitem"><a title="Pregunas frecuentes" href="../preguntas-frecuentes.html">FAQs</a></li>
+              </div>
+              CIERRE TEMPORAL  -->
+            </div>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div id="copyright" class="row">
+        <p class="span9"> <strong> bachilleratoceneval.com &copy; 2021.</strong> </p>
+        <p class="span3 text-right"> <b><a href="privacidad.html">Aviso de privacidad</a></b></p>
+      </div>
+    </div>
+    <a href="#top" id="totop"><i class="icon-angle-up"></i></a>
+  </footer>
+
+
+
+
+    <!-- SCRIPTS -->
+  <!--lazysizes-->
+  <script src="js/lazysizes.min.js" async=""></script>
+  <!--otro-->
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=236430009732599";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+  <!--SCRIPTS-->
+  <link rel="stylesheet" type="text/css" href="js/sss.js">
+  <link rel="stylesheet" type="text/css" href="js/sss.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/js/modernizr.js"></script>
+  <script src="js/sss.js"></script>
+  <script>
+	  jQuery(function($){
+	    $('.slider-testimonial').sss({
+	      slideShow : true,
+	      speed : 4000
+	      });
+	  });
+	</script>
+  <!-- Mailchimp GOAL -->
+  <script type="text/javascript">
+  var $mcGoal = {'settings':{'uuid':'d1c31d7bc8bc027585d5ca6a8','dc':'us3'}};
+    (function() {
+      var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+      sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore (sp, s);
+  })(); 
+</script>
+<!-- ENDS Mailchimp GOAL -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/57ec42d181b5df649ae7da2d/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/scripts.js"></script> 
+<!-- <script type="text/javascript" src="../js/prefixfree.js"></script> --> 
+<script type="text/javascript" src="js/tabletop.js"></script> 
+<script type="text/javascript">$(function(){var a=$(window);setTimeout(function(){$(".bs-docs-sidenav").affix({offset:{top:function(){return a.width()<=1200?495:544}}})},100)});</script> 
+
+<script type='text/javascript'>function posicionarMenu(){var b=$("header").outerHeight(true);var a=$("nav").outerHeight(true);if($(window).scrollTop()>=b-a){$("nav").addClass("navbar-fixed-top");$("nav").removeClass("trampa")}else{$("nav").addClass("trampa");$("nav").addClass("navbar-fixed-top")}}$(document).ready(function(){posicionarMenu();$(window).scroll(function(){posicionarMenu()})});$(function(){$("#testmenu a").popover()});
+     //spreadsheet
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Boph5TkZSiAV4RtYyP8yhLS1j-74uj-YAA54kUtwa5o/pubhtml';
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         wanted: [ "distrito federal", "viaducto", "oaxaca", "queretaro",  "examen" ],
+                         debug: true } )
+      })
+      function showInfo(data, tabletop) {
+        $.each( tabletop.sheets("distrito federal").all(), function(i, df) {
+          var df_li = $('<p><b>' + df.dias + '</b></p><p><i class="icon-calendar"></i> ' + df.fecha + '<br><i class="icon-time"></i> ' + df.horario + '<br><i class="icon-file-alt"></i> ' + df.examen + '<br><b style="color:red;">' + df.status + '</b></p>')
+          df_li.prependTo("#eug .texto");
+        })
+        $.each( tabletop.sheets("oaxaca").all(), function(i, oax) {
+          var oax_li = $('<p><b>' + oax.dias + '</b></p><p><i class="icon-calendar"></i> ' + oax.fecha + '<br><i class="icon-time"></i> ' + oax.horario + '<br><i class="icon-file-alt"></i> ' + oax.examen + '<br><b style="color:red;">' + oax.status + '</b></p>')
+          oax_li.prependTo("#oax .texto");
+        })
+        $.each( tabletop.sheets("queretaro").all(), function(i, qro) {
+          var qro_li = $('<p><b>' + qro.dias + '</b></p><p><i class="icon-calendar"></i> ' + qro.fecha + '<br><i class="icon-time"></i> ' + qro.horario + '<br><i class="icon-file-alt"></i> ' + qro.examen + '<br><b style="color:red;">' + qro.status + '</b></p>')
+          qro_li.prependTo("#qro .texto");
+        })
+        $.each( tabletop.sheets("viaducto").all(), function(i, vto) {
+          var vto_li = $('<p><b>' + vto.dias + '</b></p><p><i class="icon-calendar"></i> ' + vto.fecha + '<br><i class="icon-time"></i> ' + vto.horario + '<br><i class="icon-file-alt"></i> ' + vto.examen + '<br><b style="color:red;">' + vto.status + '</b></p>')
+          vto_li.prependTo("#vto .texto");
+        })
+        $.each( tabletop.sheets("examen").all(), function(i, exa) {
+          var exa_li = $('<h2>Examen ' + exa.aplicacion + '</h3><a href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a>')
+          exa_li.appendTo("#examen .page-header");
+        })
+      }
+    </script> 
+
+  <script>
+    // Exit intent
+    function addEvent(obj, evt, fn) {
+        if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false);
+        }
+        else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn);
+        }
+    }
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function(evt) {
+        if (evt.toElement == null && evt.relatedTarget == null ) {
+          $("#mostrarmodal").modal("toggle");
+         };
+    });
+    // Closing the Popup Box
+    $('a.close').click(function(){
+    $('.lightbox').slideUp();
+    });
+  </script>
+  <!--OTRO SCRIPT-->
+  <script>
+    $(document).ready(function(){
+       $("#mostrarmodal").modal("toggle");
+    });
+  </script>
+  <!--OTRO SCRIPT-->
+  <script>
+    var acc = document.getElementsByClassName("accordion-1");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active1");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+  <!--OTRO SCRIPT-->
+  <script type="text/javascript">
+  //tabs fechas
+  $('#fechas a').click(function (e) {
+    e.preventDefault();
+      $(this).tab('show');
+  })
+  </script>
+  <!--OTRO SCRIPT-->
+  <!-- <script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script> 
+  <script type="text/javascript">
+    ;(function($) {
+      // Cuando la página esté cargada
+      $(function() {
+        // Evento click
+        $('#boton').on('click', function(e) {
+          // Prevenir la acción por defecto
+          e.preventDefault();
+          // Se lanza el método bPopup 
+          $('#elemento_a_mostrar').bPopup();
+          });
+        });
+    })(jQuery);
+  </script>-->
+
+
+
+  
+  <!--script de sendinblue-->
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Elija un código de país';
+    window.LOCALE = 'es';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+    window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
+
+    window.GENERIC_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+
+
+
+    window.translation = {
+      common: {
+        selectedList: '{quantity} lista seleccionada',
+        selectedLists: '{quantity} listas seleccionadas'
+      }
+    };
+
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script src="https://sibforms.com/forms/end-form/build/main.js" async></script>
+
+  <!--CARRUSEL-->
+  
+  <!--<script type="text/javascript">function posicionarMenu() { var e = $("header").outerHeight(true); var t = $("nav").outerHeight(true); if ($(window).scrollTop() >= e - t) { $("nav").addClass("navbar-fixed-top"); $("nav").removeClass("trampa") } else { $("nav").addClass("trampa"); $("nav").addClass("navbar-fixed-top") } } function showInfo(e, t) { $.each(t.sheets("slide").all(), function (e, t) { var n = $('<li data-target="#myCarousel" data-slide-to="' + t.id + '" class="' + t.class + '"></li>'); n.appendTo(".carousel-indicators"); var r = $('<div class="item row ' + t.class + '"><div class="span5 offset1"><img height="263" src="' + t.src + '" alt="' + t.alt + '"></div><div class="span5"><div class="block"><p><b>' + t.titulo + '</b></p><p>' + t.parrafo + '</p></div><p><a class="btn btn-primary btn-large" href="' + t.href + '" target="' + t.target + '">' + t.boton + "</a></p></div></div>"); r.appendTo(".carousel-inner") }) } $(document).ready(function () { $("#myCarousel").carousel({ interval: 4200 }); $("#myCarousel").swiperight(function () { $("#myCarousel").carousel("prev") }); $("#myCarousel").swipeleft(function () { $("#myCarousel").carousel("next") }) }); $(document).ready(function () { posicionarMenu(); $(window).scroll(function () { posicionarMenu() }) }); /*var public_spreadsheet_url = ""; $(document).ready(function () { Tabletop.init({ key: public_spreadsheet_url, callback: showInfo, simpleSheet: true, debug: true }) })*/</script>-->
+  
+  <script type="text/javascript">
+  function posicionarMenu() {
+    var e = $("header").outerHeight(true);
+    var t = $("nav").outerHeight(true);
+    if ($(window).scrollTop() >= e - t) {
+        $("nav").addClass("navbar-fixed-top");
+        $("nav").removeClass("trampa")
+    } else {
+        $("nav").addClass("trampa");
+        $("nav").addClass("navbar-fixed-top")
+    }
+}
+/*
+function showInfo(e, t) {
+    $.each(t.sheets("slide").all(), function (e, t) {
+        var n = $('<li data-target="#myCarousel" data-slide-to="' + t.id + '" class="' + t.class + '"></li>');
+        n.appendTo(".carousel-indicators");
+        var r = $('<div class="item row ' + t.class + '"><div class="span5 offset1"><img height="263" src="' + t.src + '" alt="' + t.alt + '"></div><div class="span5"><div class="block"><p><b>' + t.titulo + '</b></p><p>' + t.parrafo + '</p></div><p><a class="btn btn-primary btn-large" href="' + t.href + '" target="' + t.target + '">' + t.boton + "</a></p></div></div>");
+        r.appendTo(".carousel-inner")
+    })
+}*/
+$(document).ready(function () {
+    $("#myCarousel").carousel({
+        interval: 6000
+    });
+
+    $("#myCarousel").swiperight(function () {
+        $("#myCarousel").carousel("prev")
+    });
+
+    $("#myCarousel").swipeleft(function () {
+        $("#myCarousel").carousel("next")
+    })
+});
+
+/*$(document).ready(function () {
+    posicionarMenu();
+
+    $(window).scroll(function () {
+        posicionarMenu()
+    })
+});*/
+
+/*var public_spreadsheet_url = "";
+$(document).ready(function () {
+    Tabletop.init({
+        key: public_spreadsheet_url,
+        callback: showInfo,
+        simpleSheet: true,
+        debug: true
+    })
+})*/
+</script>
+
 </body>
 </html>
