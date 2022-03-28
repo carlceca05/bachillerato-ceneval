@@ -1,6 +1,13 @@
 .sombrio {
   box-shadow: 0 5px 15px 0 rgba(60, 160, 144, .4)
 }
+.img2 {
+  background-image: url(../img/img3.webp);
+  background-image: image-set (url(../img/img3.webp),url(../img/img3.png),);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .gordita {
   font-weight: 900
@@ -495,7 +502,7 @@ div::-webkit-scrollbar {
       min-width: 99%
   }
 }
-$font-weight-normal:500;
+/*$font-weight-normal:500;*/ 
 $headings-font-weight: 700;
 $primary:#3CA090;
 $success:#808080;
