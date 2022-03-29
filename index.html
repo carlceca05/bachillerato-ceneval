@@ -261,7 +261,7 @@
   </style>
 </head>
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar" id="top">
+<body class="scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
   <!--ENCABEZADO LOGO Y NUMEROS-->
   <header class="container-fluid py-3">
     <div class="container">
@@ -539,35 +539,14 @@
   }
 
 </style>
-
-
-
-            <ol class="nav nav-list shadow2 menu" id="main"> <!-- bs-docs-sidenav -->
-              <li class="w-100 spia1 " style="display: flex; justify-content: space-between;" ><a class="text-decoration-none " href="#capacitacion">Curso de capacitación </a> <i class="icon-chevron-right "></i> </li>
-              <li class="w-100 spia1" style="display: flex; justify-content: space-between;"><a class="text-decoration-none" href="#examen">Examen de admisión</a><i class="icon-chevron-right"></i></li>
-              <li class="w-100 spia1" style="display: flex; justify-content: space-between;"><a class="text-decoration-none" href="#next">Ahora ¿qué sigue?</a><i class="icon-chevron-right"></i></li>
-            </ol>
+           
 <!--spy-->
 <div id="list-example" class="list-group">
-  <a class="list-group-item list-group-item-action" href="#capacitacion">Curso de capacitación</a>
+  <a class="list-group-item list-group-item-action" href="#capacitacion">Curso de capacitación </a>
   <a class="list-group-item list-group-item-action" href="#examen">Examen de admisión</a>
   <a class="list-group-item list-group-item-action" href="#next">Ahora ¿qué sigue?</a>
-  <!--<a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>-->
+  
 </div>
-<!--<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-  <h4 id="capacitacion">Item 1</h4>
-  <p>...</p>
-  <h4 id="examen">Item 2</h4>
-  <p>...</p>
-  <h4 id="next">Item 3</h4>
-  <p>...</p>
-  <h4 id="list-item-4">Item 4</h4>
-  <p>...</p>
-</div>-->
-
-
-
-
               <!--formulario DUDAS-->
               <!-- Begin Sendinblue Form -->
               <div class="sib-form pt-4" style="text-align: center; padding: 0px; margin-top:15px; ">
@@ -758,7 +737,9 @@
      
         </div>
         <!--otro col-->
-        <div class="col-12 col-lg-9 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+        <div class="col-12 col-lg-9 " >
+
+
           <!--secciON NO SE QUE SEA ALGO DE AVISO-->
           <div id="aviso" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelr"
             aria-hidden="true">
@@ -1126,30 +1107,10 @@
                 </div>
               </section>
 
-              <!--
-              <div class="accordion" id="accordion2">
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#eug">
-                          <i class="icon-double-angle-right"></i> CDMX (plantel eugenia <img class="pull-right lazyload"
-                            data-src="img/metro-eugenia.webp" height="16" width="16">)
-                        </a>
-                      </div>
-                      <div id="eug" class="accordion-body in collapse" style="height: auto;">
-                        <div class="accordion-inner">
-                          <div class="texto">
-                           
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    -->
+              
                     <a name="pagar"> </a>
                     <!--SECCION 7 COMPRAR-->
-                    <h3 class="compra">Comprar</h3>
+                    <h3 class="compra" id="comprar"  >Comprar</h3>
                     <table class="table table-bordered table-striped " cellspacing="10" cellpadding="10">
                       <thead>
                         <tr>
@@ -1294,7 +1255,7 @@
                     </div>
                     <div class="col p-5 espacio">
                       <h3>Requisitos para aplicar el <strong>examen CENEVAL de bachillerato</strong>:</h3>
-                      <ul class="unstyled">
+                      <ul class="list-unstyled  small">
                         <li><i class="icon-ok"></i> CURP</li>
                         <li><i class="icon-ok"></i> Acta de Nacimiento</li>
                         <li><i class="icon-ok"></i> Identificación Oficial vigente (Sólo INE o Pasaporte)</li>
@@ -1607,7 +1568,7 @@
               </div>
               <p> Es momento de empezar con tu capacitación para poder aprobar el examen y cumplir tu objetivo. </p>
               <div class="btn-group">
-                <a class="btn btn-primary text-white btn-large " data-toggle="dropdown" href="#fechas-curso">
+                <a class="btn btn-primary text-white btn-large " href="#comprar">
                   Inscribirme al curso &nbsp; <span class="icon-caret-down icon-large"></span>
                 </a>
 
@@ -1676,7 +1637,7 @@
   <section class="container-fluid bg-light">
     <div class="container pt-5">
         <div class="row ">
-            <div class="col-12 col-lg-2 mb-4 ">
+            <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
                 <a href="index.html">
                     <picture>
                         <source class="lazyload logofooter" type="image/webp"
@@ -1751,7 +1712,7 @@
         </div>
         <div class="row row-cols-1 row-cols-lg-3 mb-4">
             <div class="col">
-                <p class="text-center text-muted text-lg-start  mb-0"> <strong> bachilleratoceneval.com &copy; 2022.</strong>    </p>
+                <p class="text-center text-muted text-lg-start  mb-0"> <strong> www.bachilleratoceneval.com &copy; 2022</strong>    </p>
             </div>
             <div class="col">
 
