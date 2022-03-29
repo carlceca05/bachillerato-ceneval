@@ -37,6 +37,11 @@
     href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
 
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -257,48 +262,8 @@
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar" id="top">
-  <!--MENU DE NAVEGACON-->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-primary hidden-desktop collapsed pull-right" data-toggle="collapse"
-          data-target=".nav-collapse">menú</button>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li>
-              <a href="index.html"><i class="icon-home"></i> inicio</a>
-            </li>
-            <li class="dropdown active">
-              <a class="dropdown-toggle " data-toggle="dropdown" href="#"><i class="icon-book"></i> cursos <b
-                  class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu">
-                <li role="menuitem"><span class="nav-header">Exámenes <abbr
-                      title="Centro Nacional de Evaluación Para La Educación Superior">CENEVAL</abbr></span>
-                  <ul class="unstyled">
-                    <li role="menuitem">
-                      <a href="#pagar"> Curso presencial &nbsp; &nbsp; &nbsp;$6000</a>
-                    </li>
-                    <li role="menuitem">
-                      <a href="#pagar"> Curso en linea &nbsp; &nbsp; &nbsp; &nbsp; $2500</a>
-                    </li>
-                    <li role="menuitem">
-                      <a href="#pagar">Curso aula virtual &nbsp; &nbsp;$4500</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="https://bachilleratoceneval.com/blog" target="new"><i class="icon-file"></i> Blog</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </nav>
   <!--ENCABEZADO LOGO Y NUMEROS-->
-  <header class="container-fluid">
+  <header class="container-fluid py-3">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -320,6 +285,60 @@
       </div>
     </div>
   </header>
+  
+  <!--convoca-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container ">
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#calendario">Calendario</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Capacitación </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li class=""><a class="dropdown-item " href="sesionesinformativas.html"> Sesiones Informativas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class=""><a class="dropdown-item " href="aulavirtual.html"> Aula Virtual</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item " href="cursoenlinea.html">Curso en línea</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-light" href=""></a>
+                </li>
+                <li class="nav-item cuadrada d-flex ">
+                    <a class="nav-link" target="_blank" href="https://www.facebook.com/convocatoriaCENEVAL">
+                        <i class="bi bi-facebook"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
   <!--portada slider nuevo-->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -368,7 +387,7 @@
             <h1 class="text-uppercase">Prepa para empresas</h1>
             <p>Contamos con experiencia impartiendo cursos a empresas, apoya a tu personal para conseguir su
               bachillerato y puedan sobresalir con éxito.</p>
-            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal2">
                 Solicitar cotización
               </button></p>
             <div class="row row-cols-3  row-cols-lg-5 pt-0 pt-lg-5">
@@ -423,71 +442,57 @@
 
   <!--seccion 1 calendario-->
   <section id="calendario" class="container-fluid pt-5 pb-2">
-    <div class="container">
+    <div class="container p-0">
       <h2>CALENDARIO</h2>
       <div>
         <div class=" ">
           <p>
-            <span class="mueve btn">&#139;</span>
-            <span class="mueve btn">&#155;</span>
+            <span class="mueve btn btn-lg btn-outline-primary">&#139;</span>
+            <span class="mueve btn btn-lg btn-outline-primary">&#155;</span>
           </p>
         </div>
-        <style>
-          .hola {
-            display: flex;
-            margin: auto;
-            overflow-x: auto;
-            scrollbar-width: none;
-            padding: 20px;
-          }
-        </style>
+        
 
         <div class="hola " style="overflow-x:auto; scrollbar-width:none; ">
-          <div class="product card" style="margin-right:10px;position:relative; ">
-            <div class="card-body ">
+          <div class="product card shadow" style="margin-right:10px;position:relative; ">
+            <div class="card-body">
               <i class="bi bi-calendar3 fs-2"></i>
               <h6 class="card-title">REGISTRO AL EXAMEN</h6>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success" >Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-2</strong>
                 <br> Del 7 al 27 Febrero
               </p>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success">Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-1</strong>
                 <br> Del 17 al 30 Enero
               </p>
               <h6 class="text-primary"> ENE-FEB 2022</h6>
             </div>
           </div>
-          <div class="product card" style="margin-right:10px;position:relative; ">
+          <div class="product card shadow" style="margin-right:10px;position:relative; ">
             <div class="card-body">
               <i class="bi bi-calendar3 fs-2"></i>
               <h6 class="card-title">APLICACIÓN DEL EXAMEN</h6>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success">Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-2</strong>
                 <br> 3 de Abril
               </p>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success">Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-1</strong>
                 <br> 19 de Febrero
               </p>
               <h6 class="text-primary">FEB-ABR 2022</h6>
             </div>
           </div>
-          <div class="product card" style="margin-right:10px;position:relative; ">
+          <div class="product card shadow" style="margin-right:10px;position:relative; ">
             <div class="card-body">
               <i class="bi bi-calendar3 fs-2"></i>
               <h6 class="card-title">FECHA DE RESULTADOS</h6>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success" >Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-2</strong>
                 <br> 3 de Junio
               </p>
-              <span class="badge" style="background-color:#19bb27  ;">Nacional</span> <span class="badge"
-                style="background-color: #888888 ;">Lapiz y Papel</span>
+              <span class="badge bg-primary" >Nacional</span> <span class="badge bg-success">Lapiz y Papel</span>
               <p class="card-text "> <strong> Periodo 2022-1</strong>
                 <br> 15 de Abril
               </p>
@@ -495,10 +500,10 @@
 
             </div>
           </div>
-          <div class="product card " style="margin-right:10px;position:relative; ">
+          <div class="product card shadow" style="margin-right:10px;position:relative; ">
             <div class="card-body pt-3 text-center">
               <i class="bi bi-calendar3 fs-1"></i>
-              <h6 class="card-title text-primary fs-3">CONVOCATORIA CENEVAL</h6>
+              <h6 class="card-title text-primary fs-3">PERIDOOS DEL EXAMEN CENEVAL</h6>
               <h6 class="fs-1">2022</h6>
             </div>
           </div>
@@ -506,22 +511,66 @@
       </div>
     </div>
   </section>
-
+  <style>
+    .quedado{
+      /*position: fixed;*/
+      width:270px ;
+      top:40px;
+    }
+  </style>
   <!--SECCION MAPA DONDE ESTAS-->
-  <section class="container-fluid">
+  <section class="container-fluid pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-3  desaparece" style="">
-          <div class="span3 bs-docs-sidebar hidden-phone hidden-phone">
-            <ol class="nav nav-list bs-docs-sidenav">
-              <li><a href="#curso"><i class="icon-chevron-right"></i>curso <span class="hidden-tablet">de
-                    capacitación</span></a></li>
-              <li><a href="#examen"><i class="icon-chevron-right"></i>examen <span class="hidden-tablet">de
-                    admisión</span></a></li>
-              <li><a href="#next"><i class="icon-chevron-right"></i>Ahora ¿qué sigue?</a></li>
+        <div class="col-3 d-none d-lg-block  ">
+          <div class="sticky-top2 " >
+<style>
+  .spia1{
+    margin: 0 0 0px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+
+  }
+  .shadow2{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  } 
+  .spia1:active{
+    background-color: #195ec8;
+  }
+
+</style>
+
+
+
+            <ol class="nav nav-list shadow2 menu" id="main"> <!-- bs-docs-sidenav -->
+              <li class="w-100 spia1 " style="display: flex; justify-content: space-between;" ><a class="text-decoration-none " href="#capacitacion">Curso de capacitación </a> <i class="icon-chevron-right "></i> </li>
+              <li class="w-100 spia1" style="display: flex; justify-content: space-between;"><a class="text-decoration-none" href="#examen">Examen de admisión</a><i class="icon-chevron-right"></i></li>
+              <li class="w-100 spia1" style="display: flex; justify-content: space-between;"><a class="text-decoration-none" href="#next">Ahora ¿qué sigue?</a><i class="icon-chevron-right"></i></li>
+            </ol>
+<!--spy-->
+<div id="list-example" class="list-group">
+  <a class="list-group-item list-group-item-action" href="#capacitacion">Curso de capacitación</a>
+  <a class="list-group-item list-group-item-action" href="#examen">Examen de admisión</a>
+  <a class="list-group-item list-group-item-action" href="#next">Ahora ¿qué sigue?</a>
+  <!--<a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>-->
+</div>
+<!--<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+  <h4 id="capacitacion">Item 1</h4>
+  <p>...</p>
+  <h4 id="examen">Item 2</h4>
+  <p>...</p>
+  <h4 id="next">Item 3</h4>
+  <p>...</p>
+  <h4 id="list-item-4">Item 4</h4>
+  <p>...</p>
+</div>-->
+
+
+
+
               <!--formulario DUDAS-->
               <!-- Begin Sendinblue Form -->
-              <div class="sib-form" style="text-align: center; padding: 0px; margin-top:15px;">
+              <div class="sib-form pt-4" style="text-align: center; padding: 0px; margin-top:15px; ">
                 <div id="sib-form-container" class="sib-form-container">
                   <div id="error-message" class="sib-form-message-panel"
                     style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -554,14 +603,14 @@
                     <form id="sib-form" method="POST"
                       action="https://004288b5.sibforms.com/serve/MUIEAKSaqTeRAzGU43lyA7-ShErH2yB5twqTi1X8jmvkXREbaIuskdG4yXYb1WvcKJ70Q1IF8RNZgV_GBfOnbCzvEaTU9z5TP_-vM4anE3XWEYj6hPWBUeEy9p7QUpygMwyaSYe_8GYv1JH7mjWJd5RNlyISpP8r_flAh96-17RBgjkdBReIkkEGsRhlOfnx6Y3nKsd4sFX8fChL"
                       data-type="subscription">
-                      <div>
+                      <div class="">
                         <div class="sib-form-block"
                           style="font-size:20px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; padding: 0px;">
-                          <p>¿Tienes dudas?</p>
+                          <p class="mb-3 ">¿Tienes dudas?</p>
                         </div>
                       </div>
-                      <hr style="padding: 0px; margin-bottom: 10px; margin-top: 4px; ">
-                      <div style="padding: 0px;">
+                      <!--<hr style="padding: 0px; margin-bottom: 20px; margin-top: 4px; ">-->
+                      <div class="shadow2" style="padding: 0px; ">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -577,8 +626,8 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div style="padding: 0px;">
+                      </div >
+                      <div class="shadow2" style="padding: 0px;">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -595,7 +644,7 @@
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="shadow2">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -612,7 +661,7 @@
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="shadow2">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -631,8 +680,8 @@
                         </div>
                       </div>
 
-                      <div>
-                        <div class="sib-input sib-form-block" style="padding: 0px;">
+                      <div class="shadow2" >
+                        <div class="sib-input sib-form-block " style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
 
@@ -648,7 +697,7 @@
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="shadow2">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -665,7 +714,7 @@
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="shadow2">
                         <div class="sib-input sib-form-block" style="padding: 0px;">
                           <div class="form__entry entry_block">
                             <div class="form__label-row ">
@@ -684,8 +733,8 @@
                         </div>
                       </div>
                       <div style="padding: 8px 0;">
-                        <div class="sib-form-block" style="text-align: center">
-                          <button class="sib-form-block__button sib-form-block__button-with-loader"
+                        <div class="sib-form-block " style="text-align: center">
+                          <button class="shadow2 sib-form-block__button sib-form-block__button-with-loader"
                             style="font-size:16px; text-align:center; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#41bb19; border-radius:3px; border-width:0px;"
                             form="sib-form" type="submit">
                             <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
@@ -706,10 +755,10 @@
               </div>
               <!--fin formulario sendinblue -->
           </div>
-          </ol>
+     
         </div>
         <!--otro col-->
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-lg-9 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
           <!--secciON NO SE QUE SEA ALGO DE AVISO-->
           <div id="aviso" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelr"
             aria-hidden="true">
@@ -727,25 +776,7 @@
             </div>
           </div>
 
-          <style>
-            .flotante {
-              background-color: #19bb27;
-              position: fixed;
-              top: 180px;
-              right: 0;
-              /*transform: rotate(  );*/
-              writing-mode: vertical-lr;
-              transform: rotate(180deg);
-              font-size: 13px;
-              border-radius: 0px 25px 5px 0;
-              padding: 20px 15px 15px 15px;
-              z-index: 50;
-            }
-
-            .flotante:hover {
-              background-color: #128d1c;
-            }
-          </style>
+         
           <!--SECCION 1 CAPACITATE-->
 
           <div id="contenido" class="span9">
@@ -784,7 +815,7 @@
                 </div>
               </section>
               <!--SECCION 2 CURSO PRESENCIAL-->
-              <div id="" class="">
+              <div id="capacitacion" class="">
                 <!--container-fluid-->
                 <div class="">
                   <div class=" rounded shadow  img2 mt-5">
@@ -1065,50 +1096,37 @@
               </section>
               <!---->
 
-              <div class="page-break"></div>
+             
               <!--SECCION FECHAS Y HORARIOS-->
-              <h3 id="fechas-curso">Fechas y horarios</h3>
-              <div class="alert alert-info alert-block">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <p>*las fechas son exclusivamente de los cursos presenciales.</p>
-              </div>
-              <p><strong>Selecciona el plantel de tu preferencia:</strong></p>
-              <div>
-                <p>  CDMX (plantel eugenia </p>
-                <div class="card p-4">
-                  <div class="row">
-                    <div class="col">
-                      <p>
-                        <b>Plantel Eugenia</b>
-                        <!--<a href="../planteles.html#eugenia">(Ver detalles del plantel)</a>-->
-                      </p>
-                      <p>
-                        <i class="icon-map-marker"></i> Enrique Pestalozzi 711, Col. del Valle, Benito Juárez,
-                        03100 Ciudad de México, Distrito Federal. A unas calles del metro Eugenia <img
-                          class="lazyload" style="width:14px; height:14px;" data-src="img/metro-eugenia.webp"
-                          width="14" height="14"><a href="https://goo.gl/maps/niy5PzVejPM2" target="_blank">Cómo
-                          llegar</a><br>
-                        <i class="icon-phone"></i> <a onclick="goog_report_conversion('tel:5562717532')"
-                          href="tel:5562717532"><strong style="color:#41bb19;"> (55) 6271 7532</a></strong> -
-                        <a onclick="goog_report_conversion('tel:5558181083')" href="tel:5558181083"><strong
-                            style="color:#41bb19;"> (55) 5818 1083</a></strong><br>
-                        <i class="icon-envelope-alt"></i> <a title="info@bachilleratoceneval.com"
-                          href="mailto:info@bachilleratoceneval.com?subject=Solicitud de información&body=Nombre:%0A%0ATeléfono:%0A%0AEstado:%0A%0AMunicipio:%0A%0ACurso:%0A%0AMensaje:">info@bachilleratoceneval.com</a>
-                      </p>
-                    </div>
-                    <div class="col">
-                      <div class="">
-                        <img src="img/df-eugenia.png" width="100%" alt="">
+              <section class="py-5">
+                <h3 id="fechas-curso">Fechas y horarios</h3>
+                <div class="alert alert-info alert-block">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <p class="mb-0">*las fechas son exclusivamente de los cursos presenciales.</p>
+                </div>
+                <!--<p><strong>Selecciona el plantel de tu preferencia:</strong></p>-->
+                <div>
+                  <p class="bg-info text-white p-2" >  CDMX (plantel eugenia </p>
+                  <div class="card">
+                    <div class="row">
+                      <div class="col ">
+                        <div class="bg-light p-4">
+                        <p> <b>Plantel Eugenia</b> </p>
+                        <p> <i class="icon-map-marker"></i> Enrique Pestalozzi 711, Col. del Valle, Benito Juárez, 03100 Ciudad de México, Distrito Federal. A unas calles del metro Eugenia <img class="lazyload" style="width:14px; height:14px;" data-src="img/metro-eugenia.webp" width="14" height="14"><a href="https://goo.gl/maps/niy5PzVejPM2" target="_blank">Cómo llegar</a><br> <i class="icon-phone"></i> <a onclick="goog_report_conversion('tel:5562717532')" href="tel:5562717532"><strong style="color:#41bb19;"> (55) 6271 7532</a></strong> - <a onclick="goog_report_conversion('tel:5558181083')" href="tel:5558181083"><strong style="color:#41bb19;"> (55) 5818 1083</a></strong><br> <i class="icon-envelope-alt"></i> <a title="info@bachilleratoceneval.com"                            href="mailto:info@bachilleratoceneval.com?subject=Solicitud de información&body=Nombre:%0A%0ATeléfono:%0A%0AEstado:%0A%0AMunicipio:%0A%0ACurso:%0A%0AMensaje:">info@bachilleratoceneval.com</a>
+                        </p>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="" >
+                          <img src="img/df-eugenia-2.png" width="100%" alt="" >
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
 
-
-
-<!--
-
+              <!--
               <div class="accordion" id="accordion2">
                 <div class="accordion-group">
                   <div class="accordion-heading">
@@ -1136,27 +1154,26 @@
                       <thead>
                         <tr>
                           <th>Forma de pago</th>
-                          <th>Curso presencial $6000</th>
-                          <th>Curso en línea $2500</th>
-                          <th class="desaparecido">Curso en Aula Virtual $4500</th>
+                          <th class="text-center">Curso presencial $6000</th>
+                          <th class="text-center">Curso en línea $2500</th>
+                          <th class="desaparecido text-center">Curso en Aula Virtual $4500</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Pagar en línea<img class="lazyload" data-src="img/metodosdepagovisa.webp"
-                              style="width:100px;"></td>
+                          <td>Pagar en línea<img class="lazyload" data-src="img/metodosdepagovisa.webp" style="width:100px;"></td>
                           <td style="height:50px; vertical-align:baseline;">
-                            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <p class="text-center"><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#modal3">
                               COMPRAR
                               </button></p>
                           </td>
                           <td style="vertical-align:baseline; height:50px;">
-                            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <p class="text-center"><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#modal3">
                               COMPRAR
                               </button></p>
                           </td>
                           <td class="desaparecido" style="vertical-align:baseline; height:50px;">
-                            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <p class="text-center"><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#modal3">
                               COMPRAR
                               </button></p>
                           </td>
@@ -1164,12 +1181,12 @@
                         <thead class="aparece">
                           <tr>
                             <th></th>
-                            <th colspan="2">Curso en Aula Virtual $4500</th>
+                            <th class="text-center" colspan="2">Curso en Aula Virtual $4500</th>
                           </tr>
                         </thead>
                         <td class="aparece" style="vertical-align:baseline; height:50px;"></td>
                         <td class="aparece" colspan="2" style="vertical-align:baseline; height:50px;">
-                          <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                          <p class="text-center"><button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#modal3">
                             COMPRAR
                             </button></p>
                           
@@ -1179,7 +1196,7 @@
                         <tr>
                           <td>Depósito Bancario</td>
                           <td colspan="3">
-                            <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <p class="text-center"><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
                               <img class="lazyload" data-src="img/metodosdepago.webp"> </img>
                               </button></p>
                            
@@ -1260,7 +1277,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <p><small>bachilleratoceneval.com se reserva el derecho a cancelar o posponer la apertura de
+                    <p><small> <strong> www.bachilleratoceneval.com</strong> se reserva el derecho a cancelar o posponer la apertura de
                         cursos por falta de
                         quórum, realizando la devolución total de los pagos efectuados.</small></p>
             </section>
@@ -1321,6 +1338,9 @@
               </style>
             </section>
 
+
+
+            <h3 class="text-uppercase mt-5">Guias y convocatorias</h3>
             <div id="" class="">
               <div class="">
                 <div class=" rounded shadow mt-5">
@@ -1583,52 +1603,40 @@
             <!--id next-->
             <section id="next">
               <div class="page-header">
-                <h2>Inscríbete y cumple tus metas.</h2>
+                <h2 class="text-uppercase">Inscríbete y cumple tus metas.</h2>
               </div>
               <p> Es momento de empezar con tu capacitación para poder aprobar el examen y cumplir tu objetivo. </p>
               <div class="btn-group">
-                <a class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown" href="#fechas-curso">
-                  Inscribirme al curso<span class="icon-caret-down icon-large"></span>
+                <a class="btn btn-primary text-white btn-large " data-toggle="dropdown" href="#fechas-curso">
+                  Inscribirme al curso &nbsp; <span class="icon-caret-down icon-large"></span>
                 </a>
 
               </div>
 
-              <br> <br> <br>
+         
               <!--SECCION 12 BANNERS  -->
-              <div class="">
-                <h3> Otras paginas en las que te puedes apoyar </h3>
+              <div class="py-5">
+                <h3 class="text-uppercase"> Otras paginas en las que te puedes apoyar </h3>
                 <br>
-                <div class="banners desaparecido ">
-                  <p><a href="http://los7secretos.com/"><img class="lazyload" data-src="img/bannerscecaes.webp"></a></p>
+                <div class="desaparece ">
+                  <p><a href="http://los7secretos.com/"><img class="lazyload"  data-src="img/bannerscecaes.webp"></a></p>
                 </div>
-                <div class="banners2">
-                  <p><a href="http://los7secretos.com/"><img class="lazyload" data-src="img/bannerscecaes2.webp"></a>
+                <div class="banners2 aparece">
+                  <p><a href="http://los7secretos.com/"><img class="lazyload" data-src="img/bannerscecaes2.webp" width="100%"></a>
                   </p>
                 </div>
-                <div class="banners desaparecido">
-                  <p><a href="#myModal" role="button" data-toggle="modal"><img class="lazyload"
-                        data-src="img/banner.webp"></a></p>
+                <div class="banners desaparece">
+                  <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img class="lazyload"
+                        data-src="img/banner.webp">
+                    </button></p>
                 </div>
-                <div class="banners2">
-                  <p><a href="#myModal" role="button" data-toggle="modal"><img class="lazyload"
-                        data-src="img/prepaempresas_banner_movil.webp"></a>
-                  </p>
+                <div class="banners2 aparece">
+                  <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img class="lazyload" data-src="img/prepaempresas_banner_movil.webp" width="100%">
+                    </button></p>
                 </div>
-                <!--AQUI COMIENZA EL FORMULARIO POPUP-->
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-header hidden-phone">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 id="myModalLabel">Para cotizaciones completa el siguiente formulario y nos pondremos en contacto
-                      contigo</h4>
-                  </div>
-                  <!--FORMULARIO COTIZACIONES IFRAME SENDINBLUE-->
-
-                  <iframe width="100%" height="500"
-                    src="https://bachilleratoceneval.com/formularios/formulario_cotizacion.html" frameborder="0"
-                    scrolling="auto"></iframe>
-                  <!--TERMINA FORMULARIO COTIZACIONES-->
-
+                <!--AQUI COMIENZA EL FORMULARIO POPUP TODO:-->
                   <!--Ventanas emergentes   TODO:  -->
                   <!--´para mmodales<p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
                     Solicitar cotización
@@ -1641,27 +1649,19 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <iframe title="formulario sesiones" width="100%" height="500"
-                            src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto">
-                          </iframe>
+                          <iframe width="100%" height="500"
+                    src="https://bachilleratoceneval.com/formularios/formulario_cotizacion.html" frameborder="0"
+                    scrolling="auto"></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
 
-
-
-
-
                 </div>
 
               </div>
             </section>
-            <br>
-            <br>
-            <br>
-            <br>
-            <hr>
+            
             <!--POR AQUI TERMINA EL FORMULARIO POPUP-->
           </div>
         </div>
@@ -1672,61 +1672,105 @@
     </div>
   </section>
   <!-- SECCION FOOTER  -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="span4">
-          <h4><i class="icon-bullhorn"></i> Boletín informativo</h4>
-          <p class="upper"> No te pierdas ningún evento importante, además recibe descuentos y promociones exclusivas.
-          </p>
-          <!--formulario boletin iframe-->
-          <iframe width="100%" height="156" src="https://bachilleratoceneval.com/formularios/formulario_boletin.html"
-            frameborder="0" scrolling="no"></iframe>
-
-        </div>
-        <div class="span5">
-          <h4 class="control-group.info"><i class="icon-thumbs-up"></i> testimonios</h4>
-          <p class="upper"><i class="icon-quote-left icon-3x pull-left"></i> les confieso que estaba nerviosa a la hora
-            de presentar mi examen de bachillerato,
-            <img data-src="img/testimonio-alumna.webp" class="img-polaroid pull-right lazyload"
-              alt="testiomonio de alumna" widht="60" height="60">
-            <span class="hidden-sm-desktop">en la guía venían demasiados temas y no sabía ni por donde empezar, además
-              tenía un año de inactividad escolar.
-            </span>
-            Me platicaron que en <abbr title="Preparatoria en un examen CENEVAL">bachilleratoceneval.com</abbr> eran muy
-            buenos y seguí ese consejo, afortunadamente me capacitaron de tal manera que logré aprobar mi examen y ahora
-            estoy estudiando la Licenciatura en Psicología en la UNAM.<i class="icon-quote-right"></i>
-          </p>
-          <p class="text-right"><small>Mariana Espinoza Aguilar</small></p>
-        </div>
-        <div id="sitemap" class="span3">
-          <h4><i class="icon-sitemap"></i> mapa del sitio</h4>
-          <ul class="unstyled">
-            <div class="row-fluid">
-              <div class="span6">
-                <li><a href="index.html">Inicio</a></li>
-
+  <!--seccion footer-->
+  <section class="container-fluid bg-light">
+    <div class="container pt-5">
+        <div class="row ">
+            <div class="col-12 col-lg-2 mb-4 ">
+                <a href="index.html">
+                    <picture>
+                        <source class="lazyload logofooter" type="image/webp"
+                            data-srcset="img/logo-bachillerato.png">
+                        <img class="lazyload logofooter" data-src="img/logo-bachillerato.png" alt=" ">
+                    </picture>
+                </a>
+            </div>
+            <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                <h6>SECCIONES</h6>
+                <small class="text-muted">
+                    <p class="mb-0">Calendario</p>
+                    <p class="mb-0">Capacitación</p>
+                    <p class="mb-0">Sesiones</p>
+                    <p class="mb-0">Blog</p>
+                </small>
+            </div>
+            <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                <h6>BLOG</h6>
+                <small class="text-muted">
+                    <p class="mb-0">Últimas entradas</p>
+                    <p class="mb-0">Categorias</p>
+                </small>
+            </div>
+            <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                <h6>CONTACTO</h6>
+                <small class="text-muted">
+                    <p> <i class="bi bi-whatsapp"></i> (55) 5818-1083 | 6271-7532</p>
+                </small>
+            </div>
+            <div class="col-12 col-lg-4 mb-4 text-center text-lg-start">
+              <div class="">
+                <h6><i class="icon-bullhorn"></i> Boletín informativo</h6>
+                <p class="mb-0 small"> No te pierdas ningún evento importante, además recibe descuentos y promociones exclusivas.
+                </p>
+                <iframe class="p-0" width="100%" height="156" src="/formularios/formulario_sin.html" frameborder="0" scrolling="no"></iframe>
               </div>
+            </div>
+        </div>
+        <h5 class="mt-4 text-center text-lg-start   ">PAGINAS AMIGAS</h5>
+        <div class="row row-cols-2 row-cols-lg-3 pt-4 mb-0 mb-lg-5"
+            style="max-width: 700px; margin-left: auto; margin-right: auto;">
+            <div class="col m-auto text-center mb-4 ">
+                <a target="_blank" href="https://convocatoriaceneval.com.mx">
+                    <picture>
+                        <source class=" img-fluid lazyload colaboradores" type="image/webp" width="125px" title="" data-srcset="img/convocatoria_ceneval_logo.webp" alt="">
+                        <img class=" img-fluid lazyload  colaboradores" type="image/png" width="125x" data-src="img/convocatoria_ceneval_logo.png" title="" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="col m-auto text-center mb-4 ">
+                <a target="_blank" href="https://examenunicoceneval.com">
+                    <picture class="">
+                        <source class=" img-fluid lazyload colaboradores" type="image/webp" width="125px" title="" data-srcset="img/examen_unico_logo.webp"   alt="">
+                        <img class=" img-fluid lazyload colaboradores" type="image/png" width="125x"     data-src="img/examen_unico_logo.png" title="" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="col m-auto text-center mb-4 ">
+                <a target="_blank" href="https://prepaenunexamen.com">
+                    <picture>
+                        <source class=" img-fluid lazyload  colaboradores" type="image/webp"
+                            width="125px" title="" data-srcset="img/logo_prepaenunexamen.webp"
+                            alt="">
+                        <img class=" img-fluid lazyload  colaboradores" type="image/png" width="125x"
+                            data-src="img/logo_prepaenunexamen.png" title=""
+                            alt="">
+                    </picture>
+                </a>
+            </div>
+            
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 mb-4">
+            <div class="col">
+                <p class="text-center text-muted text-lg-start  mb-0"> <strong> bachilleratoceneval.com &copy; 2022.</strong>    </p>
+            </div>
+            <div class="col">
 
             </div>
-          </ul>
+            <div class="col">
+                <p class="text-center  text-lg-end mb-0"><b><a class="text-decoration-none text-muted" href="privacidad.html">Aviso de privacidad</a></b></p>
+            </div>
         </div>
-      </div>
-      <hr>
-      <div id="copyright" class="row">
-        <p class="span9"> <strong> bachilleratoceneval.com &copy; 2021.</strong> </p>
-        <p class="span3 text-center"> <b><a href="privacidad.html">Aviso de privacidad</a></b></p>
-      </div>
     </div>
-    <a href="#top" id="totop"><i class="icon-angle-up"></i></a>
-  </footer>
+</section>
+
+  <a class="arriba text-decoration-none" href="#top" ><i class="icon-angle-up"></i></a>
   <!-- BOTON WHATSAPP  -->
-  <div style="position: fixed; bottom: 170px; right: 20px;  width:50px; border: 0px solid #73AD21;  z-index:100;">
+  <div style="position: fixed; bottom: 80px; right: 20px;  width:50px; border: 0px solid #73AD21;  z-index:100;">
     <a target="_blank" href="https://api.whatsapp.com/send?phone=5558181083"> <img class="lazyload"
         data-src="img/whats.webp" style="width:50px; height:50px;"></a>
   </div>
 
-  <!-- SCRIPTS -->
+  <!-- SCRIPTS --> 
   <!--lazysizes-->
   <script src="js/lazysizes.min.js" async=""></script>
   <!--otro-->

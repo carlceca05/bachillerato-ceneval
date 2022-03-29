@@ -1,3 +1,29 @@
+
+          .hola {
+            display: flex;
+            margin: auto;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 0px 20px 20px 0px;
+          }
+.flotante {
+  background-color: #fff;
+  position: fixed;
+  top: 150px;
+  right: 0;
+  transform: rotate( );
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 13px;
+  border-radius: 0px 25px 5px 0;
+  padding-top: 20px;
+  z-index: 1300;
+}
+
+.flotante:hover {
+  background-color: #ccc;
+}
+
 .sombrio {
   box-shadow: 0 5px 15px 0 rgba(60, 160, 144, .4)
 }
@@ -502,7 +528,19 @@ div::-webkit-scrollbar {
       min-width: 99%
   }
 }
+.sticky-top2{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  z-index: 800;
+}
+
+
 /*$font-weight-normal:500;*/ 
+$container-max-widths: (
+  xxl: 1420px
+);
+
 $headings-font-weight: 700;
 $primary:#3CA090;
 $success:#808080;
