@@ -9,7 +9,7 @@
 .flotante {
   background-color: #fff;
   position: fixed;
-  top: 150px;
+  top: 200px;
   right: 0;
   transform: rotate( );
   writing-mode: vertical-lr;
@@ -27,8 +27,8 @@
 .sombrio {
   box-shadow: 0 5px 15px 0 rgba(60, 160, 144, .4)
 }
-.img2 {
-  background-image: url(../img/img3.webp);
+.presencial {
+  background-image: url(../img/bachileratoceneval-fondo2.png);
   background-image: image-set (url(../img/img3.webp),url(../img/img3.png),);
   background-repeat: no-repeat;
   background-position: center;
@@ -225,21 +225,21 @@
 }
 
 .requisitos {
-  background-image: url(../img/requisitos.webp);
+  background-image: url(../img/bachileratoceneval-fondo6.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
 }
 
 .terminar {
-  background-image: url(../img/terminar.webp);
+  background-image: url(../img/bachileratoceneval-fondo5.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
 }
 
-.ventajas {
-  background-image: url(../img/ventajas.webp);
+.linea {
+  background-image: url(../img/bachileratoceneval-fondo4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -294,8 +294,8 @@
   background-size: cover
 }
 
-.linea {
-  background-image: url(../img/linea.webp);
+.capacitate {
+  background-image: url(../img/bachileratoceneval-fondo1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -360,7 +360,7 @@
 }
 
 .bg-guia {
-  background-image: url(../img/fondo.webp);
+  background-image: url(../img/bachileratoceneval-fondo7.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -374,7 +374,7 @@
 }
 
 .aula {
-  background-image: url(../img/aula.webp);
+  background-image: url(../img/bachileratoceneval-fondo3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -394,6 +394,61 @@
   background-size: cover
 }
 
+.descarga {
+  color: #fff;
+  background-color: #3CA090;
+  padding: 10px;
+}
+
+.descarga:hover {
+  background-color: #287064;
+  color: #fff;
+}
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: .75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.aire {
+  padding: 60px 0px;
+}
+.carousel-caption2 {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  color: #fff;
+  top: 25%;
+  max-width: 700px;
+}
+.spia1 {
+  margin: 0 0 0px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+
+}
+
+.shadow2 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.spia1:active {
+  background-color: #195ec8;
+}
+.logos {
+  width: 100px;
+}
+.quedado {
+  /*position: fixed;*/
+  width: 270px;
+  top: 40px;
+}
 @media only screen and (min-width:901px) and (max-width:3000px) {
   .cuadrada {
       display: none
@@ -412,10 +467,27 @@
   .pararotado {
       margin-top: 100px
   }
+  .espacio {
+    padding: 0px 80px;
+  }
+  .hola .product {
+    min-width: 33%;
+    transition: .5s;
+  }
+  .aparece {
+    display: none
+}
 }
 
 @media only screen and (min-width:100px) and (max-width:900px) {
-  .img2 {
+  .espacio {
+    padding: 0px 0px;
+  }
+
+  .hola .product {
+    min-width: 90%;
+  }
+  .presencial {
       background-image: none
   }
   .inv {
@@ -434,6 +506,7 @@
   .alto {
       height: auto
   }
+  
   .pararotado {
       margin-top: 100px
   }
@@ -446,6 +519,9 @@
   .linea {
       background-image: none
   }
+  .aula {
+    background-image: none
+}
   .simulacro {
       background-image: none
   }
@@ -461,6 +537,9 @@
   .capacitate {
       background-image: none
   }
+  .requisitos {
+    background-image: none
+  }
   .testi2 {
       position: absolute;
       top: 0;
@@ -473,6 +552,21 @@
   }
   .logofooter {
       width: 40%
+  }
+  .botonsito {
+    text-align: center;
+  }
+  .carousel-caption2 {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    color: #fff;
+    top: 27%;
+    max-width: 700px;
+  }
+
+  .logos {
+    width: 80px;
   }
 }
 
@@ -540,7 +634,7 @@ div::-webkit-scrollbar {
 $container-max-widths: (
   xxl: 1420px
 );
-
+$modal-dialog-max-widths: 800px ;
 $headings-font-weight: 700;
 $primary:#3CA090;
 $success:#808080;
