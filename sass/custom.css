@@ -653,7 +653,6 @@ div::-webkit-scrollbar {
   z-index: 800;
 }
 
-/*$font-weight-normal:500;*/
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -1267,6 +1266,10 @@ progress {
 
 .container,
 .container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
 .container-xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -1275,9 +1278,33 @@ progress {
   margin-left: auto;
 }
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1420px;
+    max-width: 1320px;
   }
 }
 
@@ -5019,7 +5046,7 @@ fieldset:disabled .btn {
 }
 
 .navbar > .container,
-.navbar > .container-fluid, .navbar > .container-xxl {
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
