@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <title>Bachillerato CENEVAL | Capacítate de forma presencial o en línea.</title>
+    <meta charset="utf-8">
+    <meta name="Author" content="Bachillerato Ceneval">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description"
+        content="Obtén tu certificado de bachillerato en 4 meses con un solo examen CENEVAL. Curso actualizado y especializado en el examen, examenes simulacro y práctica con reactivos. Clases presenciales y en línea">
+    <meta name="keywords"
+        content="Bachilleratocenenval, ceneval, prepa, sep, preparatoria, bachillerato, acuerdo 286, nivel medio superior, preparatoria en linea, bachillerato ceneval, prepa ceneval, preparatoria ceneval, prepa sep, bachillerato sep, prepa en linea, examen unico prepa, examen unico ceneval, certificado de bachillerato, curso bachillerato, certificado ceneval, prepa en un examen, bachillerato en un examen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css"
+        href="sass/custom.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* sendinblue */
+        @font-face {
+            font-display: block;
+            font-family: Roboto;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 600;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 700;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #ccc;
+        }
+
+        #sib-container input::placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #ccc;
+        }
+
+        #sib-container textarea::placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #cccccc;
+        }
+        .correct{
+                        background-color: yellow;
+                      }
+                      .ans-correct{
+                        background-color: yellow;
+                      }
+                      .text-aqui{
+                          font-weight:700 ;
+                          font-size: 20px;
+                          padding: 20px;
+                          
+                      }
+                      .accion{
+                        display: none;
+                      }
+                      .aqui{
+                        /*display: none;*/
+                        background-color: red;
+                      }
+                      .show{
+                        display:block
+                      }
+    </style>
+</head>
+
+<body class="scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+  <!--ENCABEZADO LOGO Y NUMEROS-->
+  <header class="container-fluid py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <abbr title="Bachillerato Ceneval"><a class="" href="index.html"> <img src="img/logo_bachilletaro_ceneval.png" width="200px" alt=""> </a></abbr>
+        </div>
+        <div class="col d-none d-lg-block text-end">
+          <div class="">
+            <address>
+              <i class="icon-phone"></i> <abbr title="Teléfonos">Tels:</abbr> <a onclick="goog_report_conversion('tel:5562717532')" href="tel:5562717532"><strong class="text-"> (55) 6271 7532</a></strong> - <a onclick="goog_report_conversion('tel:5558181083')" href="tel:5558181083"><strong class="text-primary"> (55) 5818 1083</a></strong> <i class="icon-envelope-alt"></i> <strong class="text-primary"><a title="info@bachilleratoceneval.com" href="mailto:info@bachilleratoceneval.com?subject=Solicitud de información&body=Nombre:%0A%0ATeléfono:%0A%0AEstado:%0A%0AMunicipio:%0A%0ACurso:%0A%0AMensaje:">Escríbenos</a></strong>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!--convoca-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html#calendario">Calendario</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Capacitación </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class=""><a class="dropdown-item " href="#">Curso Presencial $6,000 </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class=""><a class="dropdown-item " href="#"> Curso En Línea $2,500</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="#">Curso Aula Virtual $4,500</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="examensimulacro.html">Examen Simulacro</a>
+                  </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://bachilleratoceneval.com/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href=""></a>
+                    </li>
+                    <li class="nav-item cuadrada d-flex ">
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com/bachilleratoceneval">
+                            <i class="bi bi-facebook"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--SECCION MAPA DONDE ESTAS-->
+    <section class="container-fluid pt-5">
+      <div class="container">
+          <div class="row">
+              <div class=" ">
+                  <!--SECCION 1 CAPACITATE-->
+                  <div id="contenido" class="">
+                      <section id="aca">
+                            <!--body texto-->
+                            <h1 class="text-center text-primary mb-5 text-uppercase llenita"> Examen Simulacro Gratuito</h1>
+                    <h2 id="aca" class="text-center text-uppercase text-secondary llenita mb-4"> Practica con reactivos tipo pregunta para que te familiarices con la prueba real </h2>
+                    <h5>Instrucciones: </h5>
+                    <p> El siguiente examen es sobre el los temas de Comunicación del Examen al finalizar obtendrás tus aciertos y puedes revisar tus preguntas incorrectas, después podrás pasar al examen de Matematicas y asi sucesivamente. Mucha suerte y aprueba tu examen.  </p>    
+                    <!--comienza form-->
+                    <div id="aqui"  class="text-aqui ">
+                      
+                      <div id="accion" class="accion">
+                        Llamado a la acción ¡Inscribete a nuestro Curso !
+                      </div>
+                    </div>
+
+                    <h5 class="mb-4">Comienza tu examen</h5>
+                    <form>
+                      <p> <b class="fw-bold ">Lea el siguiente texto.</b> <br> <br> Paulatinamente el mundo que parecía familiar comienza a resultar ajeno, se va olvidando el nombre y la ubicación de los objetos, las costumbres e incluso los olores y sabores. Después se olvida todo, hasta como respirar. La pérd0ida de la memoria es el síntoma más grave del mal de Alzheimer. <br><br>México conmemoró ayer el Día Mundial del Alzheimer con un panorama muy poco alentador. Actualmente 500 mil mexicanos padecen esta enfermedad. De acuerdo con la AMAES (Asociación Mexicana de Alzheimer), se espera que para el 2011 estén afectados más de dos millones de mexicanos.<br><br> Éste es un padecimiento que ataca las partes del cerebro que controlan el pensamiento, la memoria y el lenguaje. Esto hace que se deteriore gradualmente la habilidad de las personas para razonar, recordar y comunicarse. De acuerdo con los especialistas esta enfermedad ataca a todos los grupos de la sociedad y no respeta clase social, ni raza, aunque es más frecuente en los adultos mayores. Las causas del mal aún se desconocen, aunque algunas investigaciones señalan que es una enfermedad hereditaria.  </p>
+                      <p><strong> 1. ¿Cuál es el propósito del texto?  </strong> </p>
+                      <ol class="mb-5" type="A">
+                        <li><input type="radio" name="pregunta1" id="p11"> Argumentar </li>
+                        <li id="Correct01"><input type="radio" name="pregunta1" id="p12"> Informar</li>
+                        <li><input type="radio" name="pregunta1" id="p13"> Instruir</li>
+                        <li><input type="radio" name="pregunta1" id="p14"> Persuadir</li>
+                      </ol>
+                      <p><b class="fw-bold">Lea el texto y responda las preguntas que se presentan a continuación.</b> <br><br> <b class="fw-bold">Hugo Sánchez se sintió traicionado cuando fue entrenador del Tri.</b><br><br>EFE. ALMERÍA, ESPAÑA. El ex internacional mexicano Hugo Sánchez, entrenador del Almería de España, dijo hoy que llegó a sentirse traicionado en su etapa como seleccionador de México, la cual finalizó tras no haber logrado el boleto a los Juegos Olímpicos de Beijing 2008.<br><br>Yo sé quién me apoyo y quién traicionó la misión encomendada hasta el 2010, pero Dios sabe el momento y la hora de pagarlo, manifestó Hugo en una entrevista que el diario mexicano Ovaciones le hizo en Almería.<br><br>Sánchez, considerado por muchos como el mejor jugador mexicano de la historia, apuntó que su llegada al cargo de seleccionador de su país se precipitó por la situación polémica que tenía con el anterior entrenador, el argentino Ricardo La Volpe, con quien no tiene buena relación.<br><br>El mexicano indicó que si entonces aceptó tomar el cargo fue porque no soportaba que la selección la estaba dirigiendo alguien que no sentía realmente el ser mexicano, sólo era el cuánto me van a pagar y qué beneficio voy a obtener.<br>Sánchez recordó que él tenía la meta de dirigir en España y llegó primero la selección, precipitada con una situación polémica, un duelo que tuve, una cuestión de dignidad, de orgullo y esto precipitó mi llegada, apuntó el ex jugador del Real Madrid español.</p>
+                      <p><strong>2.¿Cuál es el propósito comunicativo del texto? </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta2" id="p21"> Informar</li>
+                          <li><input type="radio" name="pregunta2" id="p23"> Expresar</li>
+                          <li><input type="radio" name="pregunta2" id="p22"> Describir</li>
+                          <li id="Correct02"><input type="radio" name="pregunta2" id="p24"> Argumentar</li>
+                      </ol>
+                      <p><strong>3. ¿Cuál es el tema del texto?</strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta3" id="p31"> Las disculpas del entrevistado</li>
+                          <li id="Correct03"><input type="radio" name="pregunta3" id="p33"> Las amenazas del entrevistado</li>
+                          <li><input type="radio" name="pregunta3" id="p32"> Las excusas del entrevistado</li>
+                          <li><input type="radio" name="pregunta3" id="p34"> La justificación del entrevistado</li>
+                      </ol>
+
+                      <p><strong>4. ¿Cuáles son las características de la narración?  </strong></p>
+                      
+                      <ol>
+                          <li>Predomina lo subjetivo, se expresan los sentimientos del autor </li>
+                          <li> Contar una historia en una sucesión de hechos que pueden ser reales o ficticios</li>
+                          <li> Sus elementos estructurales son: planteamiento, desarrollo y desenlace</li>
+                          <li> Hay un narrador que va relatando los acontecimientos que le suceden a los personajes que el autor ha creado</li>
+                          <li> Hay un narrador que va relatando los acontecimientos que le suceden a los personajes que el autor ha creado</li>
+                          <li>Generalmente se presenta en verso y se agrupa en estrofas</li>
+                          <li>Generalmente se presenta en prosa, puede contener diálogos</li>
+                      </ol>
+                  
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta4" id="p41"> 1, 3, 5, 6</li>
+                          <li><input type="radio" name="pregunta4" id="p42"> 1, 4, 6, 7</li>
+                          <li><input type="radio" name="pregunta4" id="p43"> 2, 3, 6, 7</li>
+                          <li><input type="radio" name="pregunta4" id="p44"> 2, 4, 5, 7</li>
+                      </ol>
+
+                      <p> <b> Lea el texto y responda las preguntas que se presentan a continuación.
+                      </b> Corazón, en anatomía, órgano muscular hueco que recibe sangre de las venas y la impulsa hacia las arterias. El corazón humano tiene el tamaño aproximado de un puño. Se localiza por detrás de la parte inferior del esternón, y se extiende hacia la izquierda de la línea media del cuerpo. Es de forma más o menos cónica, con la base dirigida hacia arriba, hacia el lado derecho y algo hacia atrás; la punta está en contacto con la pared del tórax en el quinto espacio intercostal. Se mantiene en esta posición gracias a su unión a las grandes venas y arterias, y a estar incluido en el pericardio, que es un saco de pared doble con una capa que envuelve al corazón y otra que se une al esternón, al diafragma y a las membranas del tórax.<br><br>           En el interior del corazón del adulto hay dos sistemas paralelos independientes, cada uno formado por una aurícula y un ventrículo. Respecto a su posición anatómica, estos sistemas reciben el nombre de corazón derecho y corazón izquierdo.
+                      
+                       </p>
+                      <p><strong>5. El corazón tiene forma:</strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta5" id="p55"> Curva</li>
+                          <li><input type="radio" name="pregunta5" id="p51"> Cónica</li>
+                          <li><input type="radio" name="pregunta5" id="p52"> Hueca  </li>
+                          <li><input type="radio" name="pregunta5" id="p53"> Interior </li>
+                      </ol>
+
+                      <p><strong>6. ¿Por qué se hace referencia al corazón como un puño humano? </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta6" id="p61"> Al movimiento de abrir y cerrar</li>
+                          <li><input type="radio" name="pregunta6" id="p62"> A la acción de oprimir y rotar</li>
+                          <li><input type="radio" name="pregunta6" id="p66"> Al movimiento de rotar y cerrar </li>
+                          <li><input type="radio" name="pregunta6" id="p64"> A la acción de golpear y abrir </li>
+                      </ol>
+
+                      <p> <b>  Lea el siguiente texto. </b><br><br> <strong> Problemas estructurales afectan el crecimiento del PIB en México: OCDE  </strong><br><br>  Recomienda fortalecer la educación y fomentar la competitividad con la entrada de nuevos inversionistas. <br><br>    <b>  La Jornada On Line</b><br>           Publicado: 03/03/2009 12:51<br> <em>México, DF.</em> <br><br>                El todavía bajo nivel educativo de la población; la débil competencia en sectores clave de la industria como medios de comunicación, telecomunicaciones, electricidad y ferrocarriles; así como las restricciones a la inversión extranjera directa, significan un obstáculo para el crecimiento per cápita del PIB en México, considera la Organización para el Crecimiento y el Desarrollo Económicos (OCDE). Ello ha impedido que se reduzca la amplia brecha de ingresos con respecto a la media de la organización, agrega.<br><br>En la nota correspondiente a México de su informe Going for the Growth 2009 dado a conocer este martes, la OCDE asegura que, pese a las reformas aprobadas en la actual administración, son necesarias nuevas modificaciones que permitan acabar con el déficit de productividad.<br><br>Sobre el tema de la educación, la organización señala que, aunque la inversión ha aumentado en la última década, ésta aún no se refleja en los resultados. El informe refiere las pruebas de PISA cuyos resultados son los más bajos de la OCDE en las pruebas de lectura y matemáticas.<br><br>Ante dicha situación, la organización internacional recomienda a México, en la asignación del gasto en el sector, enfocarse en temas no salariales, revisar los incentivos a profesores, así como la evaluación de su rendimiento y fortalecer la enseñanza técnica y profesional.<br><br>Por otro lado, señala que México cuenta con una competencia débil en sectores clave de la industria como medios de comunicación, telecomunicaciones, electricidad y ferrocarriles. Sobre ello, la OCDE sugiere al gobierno reducir la regulación que limita la competencia y fomentar la entrada de nuevos inversores.<br><br>Sobre telecomunicaciones, recomienda establecer un marco jurídico claro para el establecimiento de los precios de acceso, ampliar los tipos de redes y regular las tarifas móviles.<br><br>La tercera prioridad de México, según la OCDE, en cuanto a reformas se refiere, es la de reducir las restricciones en la inversión extranjera directa, que en muchos sectores aún impiden la competencia, la transferencia tecnológica desde el extranjero y la innovación.<br><br>En ese sentido, la organización sugiere facilitar la inversión extranjera directa en el transporte nacional terrestre, marítimo, costero y aeropuertos.<br><br>Por último, la OCDE señala que el gobierno necesita mejorar el manejo de Pemex eliminando las limitaciones a la inversión en obras públicas, aumentar la movilidad laboral en el interior de la empresa y fortalecer la rendición de cuentas de la empresa para garantizar un funcionamiento eficaz. </p>
+                      <p><strong>7. ¿Cuál es la idea principal del texto? </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta7" id="p71"> Menciona los niveles educativos y la inversión en obras públicas en México </li>
+                          <li><input type="radio" name="pregunta7" id="p77"> Destaca niveles educativos de nuestro país de acuerdo con las investigaciones de la OCDE
+                          </li>
+                          <li><input type="radio" name="pregunta7" id="p73"> Recomienda los pasos por seguir para mejorar la economía en México  </li>
+                          <li><input type="radio" name="pregunta7" id="p74"> Describe las medidas hacendarias que requiere el país  </li>
+                      </ol>
+
+                      <p><strong>8. ¿Cuál es el tipo de función comunicativa de la lengua a la que pertenece la siguiente conversación desarrollada en una discoteca?</strong></p>
+                      <ol>
+                        <li> Hola, ¿qué onda? </li>
+                        <li> ¿Y tú, qué tal? Ya ves, aquí…  </li>
+                        <li> Sí, no queda de otra. </li>
+                      </ol>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta8" id="p88"> Referencial  </li>
+                          <li><input type="radio" name="pregunta8" id="p82"> Apelativa </li>
+                          <li><input type="radio" name="pregunta8" id="p83"> Fática </li>
+                          <li><input type="radio" name="pregunta8" id="p84"> Emotiva </li>
+                      </ol>
+
+                      <p><strong>9. ¿Qué tipo de lenguaje representa la siguiente imagen? </strong></p>
+                      <img class="mb-4" src="img/pregunta9.png" alt="">
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta9" id="p91"> Icónico-verbal  </li>
+                          <li><input type="radio" name="pregunta9" id="p92"> Icónico  </li>
+                          <li><input type="radio" name="pregunta9" id="p93"> Verbal  </li>
+                          <li><input type="radio" name="pregunta9" id="p99"> Proxémico </li>
+                      </ol>
+
+                      <p><strong>10. ¿Cuál es la opción que utiliza un símil o comparación?   </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta10" id="p01"> Quisiera ser libre como el viento </li>
+                          <li><input type="radio" name="pregunta10" id="p02"> Cómo que me has dejado de querer </li>
+                          <li><input type="radio" name="pregunta10" id="p03"> El rigor con que se hunde la espada</li>
+                          <li><input type="radio" name="pregunta10" id="p04"> Lo hiciste, cómo lo ibas a dejar</li>
+                      </ol>
+
+                      <p><strong>11. ¿Cuál es la opción que representa una secuencia de acontecimientos?  </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta10" id="p01"> Un conjunto de libros </li>
+                          <li><input type="radio" name="pregunta10" id="p02">Una frase célebre </li>
+                          <li><input type="radio" name="pregunta10" id="p03"> Un cuento infantil
+                          </li>
+                          <li><input type="radio" name="pregunta10" id="p04"> Una ficha bibliográfica</li>
+                      </ol>
+                      
+
+                      <p> <b> Lea el siguiente texto.</b> <br><br> <b>El rinoceronte</b><br><br>  Durante diez años luché con un rinoceronte; soy la esposa divorciada del juez McBride. Joshua McBride me poseyó durante diez años con imperioso egoísmo. Conocí sus arrebatos de furor, su ternura momentánea, y en las altas horas de la noche, su lujuria insistente y ceremoniosa. <br><br>                       Renuncié al amor antes de saber lo que era, porque Joshua me demostró con alegatos judiciales que el amor sólo es un cuento que sirve para entretener a las criadas. Me ofreció en cambio su protección de hombre respetable. La protección de un hombre respetable es, según Joshua, la máxima ambición de toda mujer. Diez años luché cuerpo a cuerpo con el rinoceronte, y mi único triunfo consistió en arrastrarlo al divorcio.<br><br>      
+                      Joshua McBride se ha casado de nuevo, pero esta vez se equivocó en la elección. Buscando otra Eleonor, fue a dar con la horma de su zapato. Pamela es romántica y dulce, pero sabe el secreto que ayuda a vencer a los rinocerontes. Joshua McBride ataca de frente, pero no puede volverse con rapidez. Cuando alguien se coloca de pronto a su espalda, tiene que girar en redondo para volver a atacar. Pamela lo ha cogido de la cola, y no lo suelta, y lo zarandea. De tanto girar en redondo, el juez comienza a dar muestras de fatiga, cede y se ablanda. Se ha vuelto más lento y opaco en sus furores; sus prédicas pierden veracidad, como en labios de un actor desconcentrado. Su cólera no sale ya a la superficie. Es como un volcán subterráneo, con Pamela sentada encima, sonriente.<br><br>
+                      Con Joshua, yo naufragaba en el mar; Pamela flota como un barquito de papel en una palangana. Es hija de un pastor prudente y vegetariano que le enseñó la manera de lograr que los tigres se vuelvan también vegetarianos y prudentes.
+                      <br><br> Hace poco vi a Joshua en la iglesia, oyendo devotamente los oficios dominicales. Está como enjuto y comprimido. Tal parece que Pamela, con sus dos manos frágiles, ha estado reduciendo su volumen y le ha ido doblando el espinazo. Su palidez de vegetariano le da un suave aspecto de enfermo.<br><br>
+                      Las personas que visitan a los McBride me cuentan cosas sorprendentes. Hablan de unas comidas incomprensibles, de almuerzos y cenas sin rosbif; me describen a Joshua devorando enormes fuentes de ensalada. Naturalmente, de tales alimentos no puede extraer las calorías que daban auge a sus antiguas cóleras. Sus platos favoritos han sido metódicamente alterados o suprimidos por implacables y adustas cocineras. El patagrás y el gorgonzola no envuelven ya el roble ahumado del comedor en su untuosa pestilencia. Han sido remplazados por insípidas cremas y quesos inodoros que Joshua come en silencio, como un niño castigado. Pamela, siempre amable y sonriente, apaga el habano de Joshua a la mitad, raciona el tabaco de su pipa y restringe su whisky.  <br><br>
+                      Esto es lo que me cuentan. Me place imaginarlos a los dos solos, cenando en la mesa angosta y larga, bajo la luz fría de los candelabros. Vigilado por la Sabia Pamela, Joshua el glotón absorbe colérico sus livianos manjares. Pero, sobre todo, me gusta imaginar al rinoceronte en pantuflas, con el gran cuerpo bajo la bata, llamando en las altas horas de la noche, tímidas y persistentes, ante una puerta obstinada.</p>
+
+                      <p><strong>12. ¿Qué tipo de texto representa el fragmento anterior? </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta11" id=" "> Argumentativo  </li>
+                          <li><input type="radio" name="pregunta11" id=" "> Narrativo</li>
+                          <li><input type="radio" name="pregunta11" id=" "> Informativo </li>
+                          <li><input type="radio" name="pregunta11" id=" "> Expositivo </li>
+                      </ol>
+
+                      <p><strong>13. ¿Cuál es la opción que representa el esquema?   </strong></p>
+                      <img class="mb-4" src="img/pregunta13.png" alt="">
+
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta13" id=" "> Algunos insectos son arañas </li>
+                          <li><input type="radio" name="pregunta13" id=" "> Todos los insectos son arañas  </li>
+                          <li><input type="radio" name="pregunta13" id=" "> Las arañas son insectos   </li>
+                          <li><input type="radio" name="pregunta13" id=" "> Todas las arañas son insectos </li>
+                      </ol>
+
+                      <p> Eran casi las veinte horas y treinta minutos cuando el director general llamó al responsable de Informativo para comunicarle que esa noche el telediario abriría con la lectura de un comunicado nacional del gobierno, del cual, como es habitual, se encargaría el presentador correspondiente. Asimismo, el director general leería otro documento complementario.   </p>
+                      <p><strong>14. ¿Qué modo discursivo presenta el texto?  </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta14" id=" "> Entrevista </li>
+                          <li><input type="radio" name="pregunta14" id=" "> Diálogo     </li>
+                          <li><input type="radio" name="pregunta14" id=" "> Narración </li>
+                          <li><input type="radio" name="pregunta14" id=" "> Descripción </li>
+                      </ol>
+
+                      <p> <b>Lea el texto y responda las preguntas que se presentan a continuación.   </b> <br><br> <b>NOCHE </b> <br><br>Sobre la nieve se oye resbalar la noche<br>
+                        La canción caía de los árboles<br>
+                        Y tras la niebla daban voces<br>                        
+                        De una mirada encendí mi cigarro<br>
+                        Cada vez que abro los labios<br>
+                        Inundo de nubes al vacío<br>
+                        En el puerto
+                        Los mástiles están llenos de nidos<br>
+                        Y el viento gime entre las alas de los pájaros<br>
+                        <span>LAS OLAS MECEN EL NAVÍO MUERTO</span><br>
+                        Yo en la orilla silbando<br>
+                        <b>Miro la estrella que humea entre mis dedos</b><br><br>
+                        <em class="text-end">Vicente Huidobro<br>
+                        De Poemas árticos, 1918</em>   </p>
+                      <p><strong>15. ¿A qué género literario pertenece el texto anterior?                     </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta15" id=" "> Didáctico-ensayístico </li>
+                          <li><input type="radio" name="pregunta15" id=" "> Épico-narrativo </li>
+                          <li><input type="radio" name="pregunta15" id=" "> Lírico</li>
+                          <li><input type="radio" name="pregunta15" id=" "> Dramático</li>
+                      </ol>
+
+                      <p><strong>16. Identifique la figura retórica utilizada por el poeta en el verso marcado en negritas.  </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta16" id=" "> Aliteración </li>
+                          <li><input type="radio" name="pregunta16" id=" "> Prosopopeya </li>
+                          <li><input type="radio" name="pregunta16" id=" "> Metáfora </li>
+                          <li><input type="radio" name="pregunta16" id=" "> Hipérbole</li>
+                      </ol>
+
+                      <p><strong>17. ¿Cuáles son las palabras que hacen falta en el siguiente texto?
+                        La lancha estaba casi __________ ya entre dos enormes masas negras, que parecían __________, y que como se juntaran nos laminarían irremisiblemente. Con esfuerzos __________ conseguimos salir a un __________ abierto en busca de alguna otra salida.  </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta17" id=" "> inundada – edificios – tranquilamente – sitio </li>
+                          <li><input type="radio" name="pregunta17" id=" "> descompuesta – murallones – grandes – lugar  </li>
+                          <li><input type="radio" name="pregunta17" id=" "> aplastada – murallones – desesperados – espacio    </li>
+                          <li><input type="radio" name="pregunta17" id=" "> ocupada – edificios – enormes – embarcadero  </li>
+                      </ol>
+
+                      <p> <b> Lea el siguiente texto y responda las preguntas que se presentan a continuación.
+                      </b> <br><br> <b> El águila y la zorra.
+                      </b> <br><br>  Un águila y una zorra que eran muy amigas decidieron vivir juntas con la idea de que eso reforzaría su amistad. Entonces el águila escogió un árbol muy elevado para poner allí sus huevos, mientras que la zorra soltó a sus hijos bajo unas zarzas sobre la tierra al pie del mismo árbol. Un día que la zorra salió a buscar su comida, el aguilar, que estaba hambrienta cayó sobre las zarzas, se llevó a los zorruelos, y entonces ella y sus crías se regocijaron con un banquete. Regresó la zorra y más le dolió el no poder vengarse, que saber de la muerte de sus pequeños.<br><br>                    
+                      ¿Cómo podría ella, siendo un animal terrestre, sin poder volar, perseguir a otro que vuela? Tuvo que conformarse con el usual consuelo de los débiles e impotentes: maldecir desde lejos a su ahora enemiga. Más no pasó mucho tiempo para que el águila recibiera el pago de su traición contra la amistad. Se encontraban en el campo unos pastores sacrificando una cabra; cayó el águila sobre ella y se llevó una víscera que aún conservaba fuego, colocándola en su nido. Vino un fuerte viento y transmitió el fuego a las pajas, ardiendo también sus pequeños aguiluchos, que por pequeños aún no sabían volar, los cuales se vinieron al suelo. Corrió entonces la zorra, y tranquilamente devoró a todos los aguiluchos ante los ojos de su enemiga.                  </p>
+                      <p><strong>18. La moraleja de la fábula es:                      </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta18" id=" "> El vínculo de la amistad es indestructible  </li>
+                          <li><input type="radio" name="pregunta18" id=" "> La traición de los lazos de la amistad                          </li>
+                          <li><input type="radio" name="pregunta18" id=" "> Los amigos no se deben respeto</li>
+                          <li><input type="radio" name="pregunta18" id=" "> Los amigos no deben juzgarse      </li>
+                      </ol>
+
+                      <p><strong>19. El tema que maneja la lectura es:   </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta19" id=" "> La desconfianza </li>
+                          <li><input type="radio" name="pregunta19" id=" "> La infidelidad   </li>
+                          <li><input type="radio" name="pregunta19" id=" "> La traición</li>
+                          <li><input type="radio" name="pregunta19" id=" "> La amistad  </li>
+                      </ol>
+
+                      <p>   <b> Lea el texto y responda las preguntas que se presentan a continuación.   </b> <br><br> A partir de la década de 1990-2000 se sientan las bases de la modernización, que implica entre otras cosas:      </p>
+                      <ol>
+                        <li> Privatización de empresas  </li>
+                        <li> Globalización    </li>
+                        <li>   Transnacionalización</li>
+                        <li>Debilitamiento de los medios masivos de comunicación de servicio público    </li>
+                      </ol>
+                      <p><strong>20. ¿Cuál es la opción que utiliza un símil o comparación?   </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta20" id=" "> Quisiera ser libre como el viento </li>
+                          <li><input type="radio" name="pregunta20" id=" "> Cómo que me has dejado de querer </li>
+                          <li><input type="radio" name="pregunta20" id=" "> El rigor con que se hunde la espada</li>
+                          <li><input type="radio" name="pregunta20" id=" "> Lo hiciste, cómo lo ibas a dejar</li>
+                      </ol>
+
+                      <p><strong>21. ¿Cuál es la opción que utiliza un símil o comparación?   </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta21" id=" "> Quisiera ser libre como el viento </li>
+                          <li><input type="radio" name="pregunta21" id=" "> Cómo que me has dejado de querer </li>
+                          <li><input type="radio" name="pregunta21" id=" "> El rigor con que se hunde la espada</li>
+                          <li><input type="radio" name="pregunta21" id=" "> Lo hiciste, cómo lo ibas a dejar</li>
+                      </ol>
+
+                      <p><strong>22. ¿Cuál es la opción que utiliza un símil o comparación?   </strong></p>
+                      <ol type="A">
+                          <li><input type="radio" name="pregunta22" id=" "> Quisiera ser libre como el viento </li>
+                          <li><input type="radio" name="pregunta22" id=" "> Cómo que me has dejado de querer </li>
+                          <li><input type="radio" name="pregunta22" id=" "> El rigor con que se hunde la espada</li>
+                          <li><input type="radio" name="pregunta2" id=" "> Lo hiciste, cómo lo ibas a dejar</li>
+                      </ol>
+
+
+
+                     
+                      <button type="button" class="btn btn-primary" onclick="resultado()"> <a href="#aca">   RESULTADO</a></button>
+                      
+                      
+                  </form>
+    
+    
+                    <!--termina form-->
+    
+                        </section>
+                    </div>
+                    <!--SECCION 10 TESTIMONIOS-->
+                    <section class="py-5">
+                        <h3 class="text-uppercase">¿Qué dicen nuestros alumnos?</h3>
+                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-3.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="client-name text-center"> Dulce Hernández</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Debo decir muchas gracias ya que con este curso me dio
+                                        muchas posibilidades
+                                        de pasar mi examen, y asi fue, me explicaron detalladamente todo lo que
+                                        necesitaba saber respecto
+                                        al examen y su método de enseñanza es la correcta porque conocen el examen tal
+                                        cual es"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-1.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">César Hylian</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Tomé el curso para acreditar el bachillerato y gracias a
+                                        ustedes lo pase
+                                        satisfactoriamente, todo gracias a su apoyo y asesoría completamente enfocada
+                                        con el
+                                        <strong>examen CENEVAL</strong> y sin quedarme con alguna duda respecto a las
+                                        preguntas que
+                                        realizan. 100% Recomendado."
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-2.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">Eren Mila</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Aprendí mucho, no lo tuve que memorizar y se me hizo muy
+                                        fácil contestar el
+                                        examen, el curso sobrepaso mis expectativas y finalmente pude obtener mi
+                                        certificado. ¡Gracias por
+                                        su ayuda y atención que tuvieron con cada uno de nosotros!"</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon " aria-hidden="true"> <i
+                                        class="bi bi-chevron-compact-left fs-1" style="color:#797d7f ;"></i>
+                                </span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                        class="bi bi-chevron-compact-right fs-1" style="color:#797d7f ;"></i></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- SECCION 11 INSCRIBETE Y CUMPLE TUS METAS  -->
+                    <section id="next">
+                        <div class="page-header">
+                            <h2 class="text-uppercase">Inscríbete y cumple tus metas.</h2>
+                        </div>
+                        <p> Es momento de empezar con tu capacitación para poder aprobar el examen y cumplir tu
+                            objetivo. </p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary text-white btn-large " href="#comprar">
+                                Inscribirme al curso &nbsp; <span class="icon-caret-down icon-large"></span>
+                            </a>
+                        </div>
+                        <!--SECCION 12 BANNERS  -->
+                        <div class="py-5">
+                            <h3 class="text-uppercase"> Otras paginas en las que te puedes apoyar </h3>
+                            <br>
+                            <div class="desaparece">
+                                <p><a href="http://los7secretos.com/"><img class="lazyload"
+                                            data-src="img/bannerscecaes.webp"></a></p>
+                            </div>
+                            <div class="banners2 aparece">
+                                <p><a href="http://los7secretos.com/"><img class="lazyload"
+                                            data-src="img/bannerscecaes2.webp" width="100%"></a>
+                                </p>
+                            </div>
+                            <div class="banners desaparece">
+                                <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                                        <img class="lazyload" data-src="img/banner.webp">
+                                    </button></p>
+                            </div>
+                            <div class="banners2 aparece">
+                                <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                                        <img class="lazyload" data-src="img/prepaempresas_banner_movil.webp"
+                                            width="100%">
+                                    </button></p>
+                            </div>
+                            <!--AQUI COMIENZA EL FORMULARIO POPUP TODO:-->
+                            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe width="100%" height="500"
+                                                src="https://bachilleratoceneval.com/formularios/formulario_cotizacion.html"
+                                                frameborder="0" scrolling="auto"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER  -->
+    <!--seccion footer-->
+    <section class="container-fluid bg-light">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <a href="index.html">
+                        <picture>
+                            <source class="lazyload logofooter" type="image/webp"
+                                data-srcset="img/logo_bachilletaro_ceneval.webp">
+                            <img class="lazyload logofooter" data-src="img/logo_bachilletaro_ceneval.png" alt=" ">
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>SECCIONES</h6>
+                    <small class="text-muted">
+                        <p class="mb-0">Calendario</p>
+                        <p class="mb-0">Capacitación</p>
+                        <p class="mb-0">Sesiones</p>
+                        <p class="mb-0">Blog</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>BLOG</h6>
+                    <small class="text-muted">
+                        <p class="mb-0">Últimas entradas</p>
+                        <p class="mb-0">Categorias</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>CONTACTO</h6>
+                    <small class="text-muted">
+                        <p> <i class="bi bi-whatsapp"></i> (55) 5818-1083 | 6271-7532</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 text-center text-lg-start">
+                    <div class="">
+                        <h6><i class="icon-bullhorn"></i> Boletín informativo</h6>
+                        <p class="mb-0 small"> No te pierdas n ingún evento importante, además recibe descuentos y
+                            promociones
+                            exclusivas.
+                        </p>
+                        <iframe class="p-0" width="100%" height="156" src="/formularios/formulario_sin.html"
+                            frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 mb-4">
+                <div class="col">
+                    <p class="text-center text-muted text-lg-start  mb-0"> <strong> www.bachilleratoceneval.com &copy;
+                            2022</strong> </p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <p class="text-center  text-lg-end mb-0"><b><a class="text-decoration-none text-muted"
+                                href="privacidad.html">Aviso de privacidad</a></b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a class="arriba text-decoration-none" href="#top"><i class="icon-angle-up"></i></a>
+    <!-- BOTON WHATSAPP  -->
+    <div style="position: fixed; bottom: 80px; right: 20px;  width:50px;  z-index:100;">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5558181083"> <img class="lazyload"
+                data-src="img/whats.webp" style="width:50px; height:50px;"></a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!--lazysizes-->
+    <script src="js/lazysizes.min.js" async=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+
+    <!--script de sendinblue-->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Elija un código de país';
+        window.LOCALE = 'es';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+        window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
+
+        window.GENERIC_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+        window.translation = {
+            common: {
+                selectedList: '{quantity} lista seleccionada',
+                selectedLists: '{quantity} listas seleccionadas'
+            }
+        };
+
+        var AUTOHIDE = Boolean(0);
+    </script>
+    <script src="https://sibforms.com/forms/end-form/build/main.js" async></script>
+
+
+
+    </script>
+
+    <script src="js/respuestas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        async></script>
+
+</body>
+
+</html>
