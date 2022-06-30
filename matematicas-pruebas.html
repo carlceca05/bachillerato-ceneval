@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <title>Bachillerato CENEVAL | Capacítate de forma presencial o en línea.</title>
+    <meta charset="utf-8">
+    <meta name="Author" content="Bachillerato Ceneval">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description"
+        content="Obtén tu certificado de bachillerato en 4 meses con un solo examen CENEVAL. Curso actualizado y especializado en el examen, examenes simulacro y práctica con reactivos. Clases presenciales y en línea">
+    <meta name="keywords"
+        content="Bachilleratocenenval, ceneval, prepa, sep, preparatoria, bachillerato, acuerdo 286, nivel medio superior, preparatoria en linea, bachillerato ceneval, prepa ceneval, preparatoria ceneval, prepa sep, bachillerato sep, prepa en linea, examen unico prepa, examen unico ceneval, certificado de bachillerato, curso bachillerato, certificado ceneval, prepa en un examen, bachillerato en un examen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css"
+        href="sass/custom.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .correct{
+            background-color: yellow;
+        }
+        .ans-correct{
+            background-color: yellow;
+        }
+        .text-aqui{
+            font-weight:700 ;
+            font-size: 20px;
+            padding: 20px;                
+        }
+        .accion{
+            display: none;
+        }
+        .aqui{
+            /*display: none;*/
+            background-color: red;
+        }
+        .show{
+            display:block
+        }
+        table, th, td {
+            border: 1px solid #07092F;
+            padding: 5px 15px;
+            font-size: small;
+        }
+        .fondo-examen{
+            background-image:linear-gradient(90deg, rgba(255, 255, 255,0.8) 0%, rgba(255,255,255,0.8) 100%),  url(img/fondo-cuaderno.png);
+            /*background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;*/ 
+            
+        }
+    </style>
+</head>
+
+<body class="scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+    <!--ENCABEZADO LOGO Y NUMEROS-->
+    <header class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <abbr title="Bachillerato Ceneval"><a class="" href="index.html"> <img src="img/logo_bachilletaro_ceneval.png" width="200px" alt=""> </a></abbr>
+                </div>
+                <div class="col d-none d-lg-block text-end">
+                    <div class="">
+                        <address>
+                        <i class="icon-phone"></i> <abbr title="Teléfonos">Tels:</abbr> <a href="tel:5562717532"><strong class="text-"> (55) 6271 7532</a></strong> - <a href="tel:5558181083"><strong class="text-primary"> (55) 5818 1083</a></strong> <i class="icon-envelope-alt"></i> <strong class="text-primary"><a title="info@bachilleratoceneval.com" href="mailto:info@bachilleratoceneval.com?subject=Solicitud de información&body=Nombre:%0A%0ATeléfono:%0A%0AEstado:%0A%0AMunicipio:%0A%0ACurso:%0A%0AMensaje:">Escríbenos</a></strong>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--convoca-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html#calendario">Calendario</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Capacitación </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class=""><a class="dropdown-item " href="#">Curso Presencial $6,000 </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class=""><a class="dropdown-item " href="#"> Curso En Línea $2,500</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="#">Curso Aula Virtual $4,500</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="examensimulacro.html">Examen Simulacro</a>
+                  </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://bachilleratoceneval.com/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href=""></a>
+                    </li>
+                    <li class="nav-item cuadrada d-flex ">
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com/bachilleratoceneval">
+                            <i class="bi bi-facebook"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--SECCION MAPA DONDE ESTAS-->
+    <section class="container-fluid  "   >
+        <div class="container">
+            <div class="row">
+                <div class="fondo-examen py-4">
+                    <!--SECCION 1 CAPACITATE-->
+                    <div id="contenido" class=" ">
+                        <section id="aca">
+                            <!--body texto-->
+                            <h1 class="text-center text-primary  text-uppercase llenita"> Examen Simulacro Gratuito</h1>
+                            <div class="d-flex justify-content-center mb-2  ">
+                                <h2 class="border border-4 border-primary p-2 h1 text-uppercase" style="border-radius: 20px; font-weight: 800;" >Matemáticas</h2>
+                            </div>
+                            <!--comienza form-->
+                            <div id="aqui"  class="text-aqui ">
+                                <div id="accion" class="accion bg-primary">
+                                    Llamado a la acción ¡Inscribete a nuestro Curso !
+                                </div>
+                            </div>
+                            <!--<h4 class="mb-4 text-primary text-uppercase" style="font-weight: 800;"> Comienza tu examen</h4>-->
+                            <h6 id="aca" class=" text-uppercase text-secondary llenita mb-3"> Practica con reactivos tipo pregunta para que te familiarices con la prueba real </h6>
+                            <h6>Instrucciones: </h6>
+                            <p> El siguiente examen es sobre el los temas de Matemáticas del Examen al finalizar obtendrás tus aciertos y puedes revisar tus preguntas incorrectas, después podrás pasar al examen de Ciencias Experimentales y asi sucesivamente. Mucha suerte y aprueba tu examen.  </p>    
+                            
+                            
+                            <form name="mate">
+                                <p><strong> 1.	Un fabricante de tela desea enrollar 72 metros de tela color “Verde”, 116 metros de tela color “Blanca” y 52 metros de tela color “Amarilla”. ¿Cuántos carretes de las mismas dimensiones necesita como mínimo para enrollar la tela?  </strong> </p>
+                                <ol class="mb-5 " type="A" required>
+                                    <li><input type="radio" name="pregunta1" id="p1-A" required> 2 </li>
+                                    <li id="Correct01"><input type="radio" name="pregunta1" id="p1-B" required> 4</li>
+                                    <li><input type="radio" name="pregunta1" id="p1-C" required> 54</li>
+                                    <li><input type="radio" name="pregunta1" id="p1-D" required> 108  </li>
+                                </ol>
+                                <p><strong>2.	¿Cuál es la expresión algebraica que representa el perímetro de un terreno rectangular de 540 metros, si una de sus dimensiones es el doble de la otra? </strong></p>
+                                <ol class="" type="A">
+                                    <li ><input type="radio" name="pregunta2" id="p2-A" required> 2x + 2y = 540</li>
+                                    <li><input type="radio" name="pregunta2" id="p2-B" required> x + 2y = 540</li>
+                                    <li id="Correct02"><input type="radio" name="pregunta2" id="p2-C"  required> x + x + 2x + 2x = 540</li>
+                                    <li ><input type="radio" name="pregunta2" id="p2-D" required> x + x + 2 + x + 2 + x =540</li>
+                                </ol>
+                                                    
+                                <button type="button" class="btn btn-primary text-white" onclick="resultado()"><!--<a href="#aca"  class="text-white"> RESULTADO</a>--> Enviar  </button>
+                            </form>
+                            <p id="demo"></p>
+                            <!--termina form-->
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <!--SECCION 10 TESTIMONIOS-->
+                    <section class="py-5">
+                        <h3 class="text-uppercase">¿Qué dicen nuestros alumnos?</h3>
+                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-3.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="client-name text-center"> Dulce Hernández</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Debo decir muchas gracias ya que con este curso me dio
+                                        muchas posibilidades
+                                        de pasar mi examen, y asi fue, me explicaron detalladamente todo lo que
+                                        necesitaba saber respecto
+                                        al examen y su método de enseñanza es la correcta porque conocen el examen tal
+                                        cual es"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-1.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">César Hylian</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Tomé el curso para acreditar el bachillerato y gracias a
+                                        ustedes lo pase
+                                        satisfactoriamente, todo gracias a su apoyo y asesoría completamente enfocada
+                                        con el
+                                        <strong>examen CENEVAL</strong> y sin quedarme con alguna duda respecto a las
+                                        preguntas que
+                                        realizan. 100% Recomendado."
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex">
+                                        <img class="lazyload"
+                                            data-src="img/testimonios-cecaes-bachillerato-ceneval-2.webp" width="18%"
+                                            alt="" style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">Eren Mila</p>
+                                    <div class="d-flex">
+                                        <img class="lazyload" data-src="img/educacion-cinco-estrellas.webp" alt=""
+                                            style="margin: 0 auto;">
+                                    </div>
+                                    <p class="text-center">"Aprendí mucho, no lo tuve que memorizar y se me hizo muy
+                                        fácil contestar el
+                                        examen, el curso sobrepaso mis expectativas y finalmente pude obtener mi
+                                        certificado. ¡Gracias por
+                                        su ayuda y atención que tuvieron con cada uno de nosotros!"</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon " aria-hidden="true"> <i
+                                        class="bi bi-chevron-compact-left fs-1" style="color:#797d7f ;"></i>
+                                </span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                        class="bi bi-chevron-compact-right fs-1" style="color:#797d7f ;"></i></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- SECCION 11 INSCRIBETE Y CUMPLE TUS METAS  -->
+                    <section id="next">
+                        <div class="page-header">
+                            <h2 class="text-uppercase">Inscríbete y cumple tus metas.</h2>
+                        </div>
+                        <p> Es momento de empezar con tu capacitación para poder aprobar el examen y cumplir tu
+                            objetivo. </p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary text-white btn-large " href="#comprar">
+                                Inscribirme al curso &nbsp; <span class="icon-caret-down icon-large"></span>
+                            </a>
+                        </div>
+                        <!--SECCION 12 BANNERS  -->
+                        <div class="py-5">
+                            <h3 class="text-uppercase"> Otras paginas en las que te puedes apoyar </h3>
+                            <br>
+                            <div class="desaparece">
+                                <p><a href="http://los7secretos.com/"><img class="lazyload"
+                                            data-src="img/bannerscecaes.webp"></a></p>
+                            </div>
+                            <div class="banners2 aparece">
+                                <p><a href="http://los7secretos.com/"><img class="lazyload"
+                                            data-src="img/bannerscecaes2.webp" width="100%"></a>
+                                </p>
+                            </div>
+                            <div class="banners desaparece">
+                                <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                                        <img class="lazyload" data-src="img/banner.webp">
+                                    </button></p>
+                            </div>
+                            <div class="banners2 aparece">
+                                <p><button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#modal2">
+                                        <img class="lazyload" data-src="img/prepaempresas_banner_movil.webp"
+                                            width="100%">
+                                    </button></p>
+                            </div>
+                            <!--AQUI COMIENZA EL FORMULARIO POPUP TODO:-->
+                            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe width="100%" height="500"
+                                                src="https://bachilleratoceneval.com/formularios/formulario_cotizacion.html"
+                                                frameborder="0" scrolling="auto"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER  -->
+    <!--seccion footer-->
+    <section class="container-fluid bg-light">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <a href="index.html">
+                        <picture>
+                            <source class="lazyload logofooter" type="image/webp"
+                                data-srcset="img/logo_bachilletaro_ceneval.webp">
+                            <img class="lazyload logofooter" data-src="img/logo_bachilletaro_ceneval.png" alt=" ">
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>SECCIONES</h6>
+                    <small class="text-muted">
+                        <p class="mb-0">Calendario</p>
+                        <p class="mb-0">Capacitación</p>
+                        <p class="mb-0">Sesiones</p>
+                        <p class="mb-0">Blog</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>BLOG</h6>
+                    <small class="text-muted">
+                        <p class="mb-0">Últimas entradas</p>
+                        <p class="mb-0">Categorias</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                    <h6>CONTACTO</h6>
+                    <small class="text-muted">
+                        <p> <i class="bi bi-whatsapp"></i> (55) 5818-1083 | 6271-7532</p>
+                    </small>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 text-center text-lg-start">
+                    <div class="">
+                        <h6><i class="icon-bullhorn"></i> Boletín informativo</h6>
+                        <p class="mb-0 small"> No te pierdas n ingún evento importante, además recibe descuentos y
+                            promociones
+                            exclusivas.
+                        </p>
+                        <iframe class="p-0" width="100%" height="156" src="/formularios/formulario_sin.html"
+                            frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 mb-4">
+                <div class="col">
+                    <p class="text-center text-muted text-lg-start  mb-0"> <strong> www.bachilleratoceneval.com &copy;
+                            2022</strong> </p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <p class="text-center  text-lg-end mb-0"><b><a class="text-decoration-none text-muted"
+                                href="privacidad.html">Aviso de privacidad</a></b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a class="arriba text-decoration-none" href="#top"><i class="icon-angle-up"></i></a>
+    <!-- BOTON WHATSAPP  -->
+    <div style="position: fixed; bottom: 80px; right: 20px;  width:50px;  z-index:100;">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5558181083"> <img class="lazyload"
+                data-src="img/whats.webp" style="width:50px; height:50px;"></a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!--lazysizes-->
+    <script src="js/lazysizes.min.js" async=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+
+    <!--script de sendinblue-->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Elija un código de país';
+        window.LOCALE = 'es';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+        window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
+
+        window.GENERIC_INVALID_MESSAGE = "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo.";
+
+        window.translation = {
+            common: {
+                selectedList: '{quantity} lista seleccionada',
+                selectedLists: '{quantity} listas seleccionadas'
+            }
+        };
+
+        var AUTOHIDE = Boolean(0);
+    </script>
+    <script src="https://sibforms.com/forms/end-form/build/main.js" async></script>
+
+
+
+    </script>
+
+    <script src="js/matematicas-validacion.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        async></script>
+
+</body>
+
+</html>
