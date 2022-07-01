@@ -102,7 +102,7 @@
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Capacitación </a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li class=""><a class="dropdown-item " href="#">Curso Presencial $6,000 </a></li>
                             <li>
@@ -115,9 +115,24 @@
                             <li><a class="dropdown-item " href="#">Curso Aula Virtual $4,500</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="examensimulacro.html">Examen Simulacro</a>
-                  </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Exámenes <span class="d-none d-lg-block badge text-primary position-absolute top-0 start-50 translate-middle">
+                                Nuevo
+                                </span>
+                                <span class="aparece"><span class="badge bg-primary"   style="width: 15%;">
+                                    Nuevo
+                                    </span></span>
+                                
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class=""><a class="dropdown-item " href="examensimulacrogratis.html">Matematicas <span class="d-none d-lg-block  badge bg-primary position-absolute top-0 start-100 translate-middle">Nuevo</span> <span class="aparece"> <span class=" badge bg-primary " style="width: 15%;">Nuevo</span></span></a></li>
+                            <!--<li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class=""><a class="dropdown-item " href="#"> Curso En Línea $2,500</a></li>-->
+                        </ul>
+                    </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="https://bachilleratoceneval.com/blog/">Blog</a>
                     </li>
@@ -862,10 +877,43 @@
                                 </ol>
 
                                                     
-                                <button type="button" class="btn btn-primary text-white" onclick="resultado()"><a href="#aca"  class="text-white"> RESULTADO</a>  </button>
+                                <!--<button type="button" class="btn btn-primary text-white" onclick="resultado()"><a href="#aca"  class="text-white"> RESULTADO</a>RESULTADOS  </button>-->
+                                <button type="button" class="btn btn-danger text-uppercase shadow" data-bs-toggle="modal" data-bs-target="#modalcali" onclick="resultado()">
+                                    Comprueba tus aciertos
+                                </button>
+                                
                             </form>
                             <!--termina form-->
                         </section>
+                    </div>
+                </div>
+            </div>
+            <style>
+                #aciertosaqui{
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    
+                }
+            </style>
+            <!--AQUI COMIENZA EL FORMULARIO POPUP TODO:-->
+            <div class="modal fade " id="modalcali" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class=""  id="aciertosaqui"> </div>
+                            <div>
+                                <h4 class="text-center text-uppercase mb-3" >Prepárate para tu examen </h4>
+                                <p class="text-center  fw-normal">Conoce nuestro <strong>Curso en Línea</strong> para aprobar tu <strong>Examen ACREDITA-BACH</strong> a la primera <!--y mira nuestro video con la revision del <strong>Examen Simulacro</strong>--> </p>
+                                <p class="text-center"> <a class="btn btn-primary text-uppercase shadow text-white" href=""> Inicia tu capacitación </a> <!--&nbsp;&nbsp; <a class="btn btn-primary shadow text-white text-uppercase" href="">Respuestas y revisión</a>   --></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1111,7 +1159,7 @@
 
     </script>
 
-    <script src="js/respuestas-matematicas.js"></script>
+    <script src="js/slider-max.js"></script>
     <script src="js/main.js"></script>
     <script src="js/lazysizes.min.js" async></script>
 

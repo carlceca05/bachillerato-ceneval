@@ -198,16 +198,23 @@ function resultado() {
     
     //alert(" Aciertos: " + nota);
     
-    document.getElementById("aqui").innerHTML =   'Aciertos: ' + nota + '<br> Revisa tus respuestas';
+    //document.getElementById("aqui").innerHTML =   'Aciertos: ' + nota + '<br> Revisa tus respuestas';
     
     //document.write( "Aciertos:" + nota);
     
     //window.location = 'cuestionario.html'
 
     //llamado a la accion
-    //document.getElementById("accion").classList.add("show"); ///no sirve :C
+   //document.getElementById("accion").classList.add("show"); ///no sirve :C
+
+
+
+    //NUEVAS PRUEBAS
+    document.getElementById("aciertosaqui").innerHTML = '<h2 class="text-primary mb-0" style="font-weight: 800;">ACIERTOS</h2>' + nota;
+
 
     //respuestas correctas
+    /*
     document.getElementById("Correct01").classList.toggle("ans-correct");
     document.getElementById("Correct02").classList.toggle("ans-correct");
     document.getElementById("Correct03").classList.toggle("ans-correct");
@@ -271,5 +278,5 @@ function resultado() {
     document.getElementById("Correct61").classList.toggle("ans-correct");
     document.getElementById("Correct62").classList.toggle("ans-correct");
     document.getElementById("Correct63").classList.toggle("ans-correct");
-    document.getElementById("Correct64").classList.toggle("ans-correct");
+    document.getElementById("Correct64").classList.toggle("ans-correct");*/
 }
