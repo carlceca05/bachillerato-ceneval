@@ -11,5 +11,7 @@ function resultado() {
 
     nota=p1+p2;  
     
-    alert(" Aciertos: " + nota);
+    //alert(" Aciertos: " + nota);
+    document.getElementById("aqui").innerHTML =   'Aciertos: ' + nota + '<br> Revisa tus respuestas';
 }
+

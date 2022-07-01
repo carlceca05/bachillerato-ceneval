@@ -162,18 +162,22 @@
                             <form name="mate">
                                 <p><strong> 1.	Un fabricante de tela desea enrollar 72 metros de tela color “Verde”, 116 metros de tela color “Blanca” y 52 metros de tela color “Amarilla”. ¿Cuántos carretes de las mismas dimensiones necesita como mínimo para enrollar la tela?  </strong> </p>
                                 <ol class="mb-5 " type="A" required>
-                                    <li><input type="radio" name="pregunta1" id="p1-A" required> 2 </li>
-                                    <li id="Correct01"><input type="radio" name="pregunta1" id="p1-B" required> 4</li>
-                                    <li><input type="radio" name="pregunta1" id="p1-C" required> 54</li>
-                                    <li><input type="radio" name="pregunta1" id="p1-D" required> 108  </li>
+                                    <li><input type="radio" name="pregunta1" id="p1-A" value="1" required> 2 </li>
+                                    <li id="Correct01"><input type="radio" name="pregunta1" id="p1-B" value="2" > 4</li>
+                                    <li><input type="radio" name="pregunta1" id="p1-C" value="3" > 54</li>
+                                    <li><input type="radio" name="pregunta1" id="p1-D" value="4" > 108  </li>
                                 </ol>
+
                                 <p><strong>2.	¿Cuál es la expresión algebraica que representa el perímetro de un terreno rectangular de 540 metros, si una de sus dimensiones es el doble de la otra? </strong></p>
                                 <ol class="" type="A">
-                                    <li ><input type="radio" name="pregunta2" id="p2-A" required> 2x + 2y = 540</li>
-                                    <li><input type="radio" name="pregunta2" id="p2-B" required> x + 2y = 540</li>
-                                    <li id="Correct02"><input type="radio" name="pregunta2" id="p2-C"  required> x + x + 2x + 2x = 540</li>
-                                    <li ><input type="radio" name="pregunta2" id="p2-D" required> x + x + 2 + x + 2 + x =540</li>
+                                    <li id="Correct02"><input type="radio" name="pregunta2" id="p2-A" value="5" required> 2x + 2y = 540</li>
+                                    <li><input type="radio" name="pregunta2" id="p2-B" value="6"> x + 2y = 540</li>
+                                    <li id="Correct02"><input type="radio" name="pregunta2" id="p2-C" value="7"> x + x + 2x + 2x = 540</li>
+                                    <li ><input type="radio" name="pregunta2" id="p2-D" value="8"> x + x + 2 + x + 2 + x =540</li>
                                 </ol>
+
+
+                                <input type="submit" value="send" onclick="resultado()"/>
                                                     
                                 <button type="button" class="btn btn-primary text-white" onclick="resultado()"><!--<a href="#aca"  class="text-white"> RESULTADO</a>--> Enviar  </button>
                             </form>
